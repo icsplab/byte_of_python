@@ -1,15 +1,15 @@
-[[frontpage]]
-==  Welcome
+﻿[[frontpage]]
+==  참고
 
 //////////////////////////////////////////////////
-This book is written for Python 2 series, even though Python 3 series is the latest. You can read
-more about why in the <<python2vs3,Python 2 vs. 3>> section.
+현재 Python 3이 최신 버전이지만, 이 책은 Python 2에 대응합니다.
+<<python2vs3,Python 2 vs. 3>> 섹션에서 이에 대해 자세히 다루고 있습니다.
 //////////////////////////////////////////////////
 
 [[who_reads_bop]]
-=== Who reads A Byte of Python?
+=== 서평
 
-Here are what people are saying about the book:
+아래는 독자들의 서평입니다:
 
 [quote,'mailto:wmich50@theramp.net[Walt Michalik]']
 __________________________________________________
@@ -121,7 +121,7 @@ book, without it I would be clueless about Python and programming. Thanks a mill
 to _break the message down_ to a level that beginners can understand and not everyone can.
 __________________________________________________
 
-[quote,Chris-André Sommerseth]
+[quote,Chris-Andr챕 Sommerseth]
 __________________________________________________
 I love your book! It is the greatest Python tutorial ever, and a very useful reference. Brilliant,
 a true masterpiece! Keep up the good work!
@@ -328,13 +328,13 @@ Your reader
 Lee
 __________________________________________________
 
-The book is even used by NASA! It is being used in their
-http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/[Jet Propulsion
-Laboratory] with their Deep Space Network project.
+이 책은 NASA에서도 읽혀지고 있습니다!
+http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/[제트 추진 연구소(Jet Propulsion
+Laboratory)] 소속 Deep Space Network 프로젝트에서 이용되고 있습니다.
 
-=== Academic Courses
+=== 수업 교재
 
-This book is/was being used as instructional material in various educational institutions:
+이책은 다음과 같은 교육 기관에서 교재로 이용되었거나, 이용되고 있습니다.
 
 - 'Principles of Programming Languages' course at
   http://www.few.vu.nl/~nsilvis/PPL/2007/index.html['Vrije Universiteit, Amsterdam']
@@ -356,48 +356,47 @@ This book is/was being used as instructional material in various educational ins
   http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/['MIT
   OpenCourseWare']
 
-=== License
+=== 권리 및 권한
 
-This book is licensed under a http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons
-Attribution-ShareAlike 4.0 International License].
+이 책은 http://creativecommons.org/licenses/by-sa/4.0/[Creative Commons
+Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩니다.
 
-This means:
+이것은 당신이 다음의 권리를 갖는 것을 뜻합니다:
 
-- You are free to Share i.e. to copy, distribute and transmit this book
-- You are free to Remix i.e. to make changes to this book (especially translations)
-- You are free to use it for commercial purposes
+- 이 책의 복제, 배포, 전시, 공연 및 공중송신을 할 수 있습니다.
+- 이 책을 개작, 수정하거나 이차저작물을 작성할 수 있습니다 (특히 번역판을 제작할 수 있습니다).
+- 이 책을 영리 목적으로 이용할 수 있습니다.
 
-Please note:
+다음의 내용을 숙지해주시기 바랍니다:
 
-- Please do *not* sell electronic or printed copies of the book unless you have clearly and
-  prominently mentioned in the description that these copies are *not* from the original author of
-  this book.
-- Attribution *must* be shown in the introductory description and front page of the document by
-  linking back to {homepage} and clearly indicating that the original text can be fetched from this
-  location.
-- All the code/scripts provided in this book is licensed under the
-  http://www.opensource.org/licenses/bsd-license.php[3-clause BSD License] unless otherwise noted.
+- 이 책의 전자책/출력본을 판매하실 경우, 명백하고 눈에 잘 띄는 방법으로 이 책의 원 저자로부터 판매되는 것이 *아님을* 명시하지 않는 한
+  이 책을 판매하실 수 *없습니다*.
+- 이러한 권리에 관련된 내용은 *반드시* 책의 도입부에 적혀 있어야 하며,
+  이 문서의 첫 페이지에는 {homepage}로 연결되는 링크가 반드시 있어야 하고,
+  원 저자의 글을 이 곳에서 내려받을 수 있다는 사실을 명시해야 합니다.
+- 따로 명시되어 있지 않는 한, 이 책에서 사용된 모든 코드 및 스크립트는
+  http://www.opensource.org/licenses/bsd-license.php[3-clause BSD License]
+  아래에 배포됩니다.
 
-=== Read Now
+=== 책을 읽으세요!
 
-You can read the book online at {homepage}
+{homepage}에서 이 책을 온라인으로 읽으실 수 있습니다.
 
-=== Buy The Book
+=== 책 구입하기
 
-A printed hardcopy of the book can be purchased at {buy} for your offline reading pleasure, and to
-support the continued development and improvement of this book.
+종이 책을 좋아하시는 분들, 혹은 이 책의 발전과 개선을 위해 도움을 주시려는 분들께서는
+이 책의 하드카피 출력본을 {buy}에서 구입할 수 있습니다.
 
-=== Download
+=== 내려받기
 
-- http://files.swaroopch.com/python/byte_of_python.pdf[PDF] (for desktop reading, etc.)
-- http://files.swaroopch.com/python/byte_of_python.epub[EPUB] (for iPhone/iPad, ebook readers, etc.)
-- http://files.swaroopch.com/python/byte_of_python.mobi[Mobi (for Kindle)]
-- https://github.com/swaroopch/byte_of_python[GitHub] (for raw text, translating, etc.)
+- http://files.swaroopch.com/python/byte_of_python.pdf[PDF] (데스크탑 컴퓨터)
+- http://files.swaroopch.com/python/byte_of_python.epub[EPUB] (아이폰/아이패드, 전자책 단말기 등)
+- http://files.swaroopch.com/python/byte_of_python.mobi[Mobi (아마존 킨들)]
+- https://github.com/swaroopch/byte_of_python[GitHub] (책 원문, 번역 등)
 
-If you wish to support the continued development of this book, please consider
-{buy}[buying a hardcopy].
+이 책의 지속적인 발전을 바라신다면, {buy}에서 책을 구매하시는 것을 고려해 주세요.
 
-=== Read the book in your native language
+=== 번역본 읽기
 
-If you are interested in reading or contributing translations of this book to other human
-languages, please see <<translations,Translations>>.
+이 책의 번역본을 읽고 싶으신 분들, 혹은 이 책을 번역하는데 도움을 주시려는 분은 
+<<translations,번역>> 챕터를 읽어 주세요.

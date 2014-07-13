@@ -1,9 +1,9 @@
-= A Byte of Python
+﻿= A Byte of Python
 :Author: Swaroop C H
 :Email: swaroop@swaroopch.com
 :Revision: 3.0
 :doctype: book
-:lang: en
+:lang: kr
 :homepage: http://swaroopch.com/notes/python
 :buy: http://swaroopch.com/buybook
 :contact: http://swaroopch.com/contact
@@ -13,9 +13,9 @@
 :experimental:
 // http://asciidoctor.org/docs/asciidoc-syntax-quick-reference/#ui-macros
 
-"A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial
-or guide to the Python language for a beginner audience. If all you know about computers is how to
-save text files, then this is the book for you.
+"A Byte of Python" 은 무료로 제공되는 파이썬 프로그래밍 교재입니다.
+이 책은 파이썬을 처음 접하는 사람들을 위한 튜토리얼 혹은 교재의 역할을 하도록 쓰여졌습니다.
+여러분이 컴퓨터로 할 수 있는 것이 텍스트 문서를 저장하는 정도라고요? 충분합니다. 이 책을 읽으세요.
 
 include::frontpage.asciidoc[]
 
