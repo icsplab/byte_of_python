@@ -1,24 +1,25 @@
 [[preface]]
 [preface]
-== Preface
+== 서문
 
-Python is probably one of the few programming languages which is both simple and powerful. This is
-good for beginners as well as for experts, and more importantly, is fun to program with. This book
-aims to help you learn this wonderful language and show how to get things done quickly and
-painlessly - in effect 'The Anti-venom to your programming problems'.
+파이썬은 간단하면서도 강력한, 몇 안되는 프로그래밍 언어들 중 하나일 것입니다.
+파이썬은 초보자는 물론 숙련자에게도 잘 어울리지만, 가장 중요한 점은, 파이썬으로 프로그래밍 하는 것은 즐겁습니다.
+이 책은 당신이 파이썬이라는 아름다운 프로그래밍 언어를 배우고,
+당신이 하려는 일을 빠르고 쉽게 해결하는 방법을 보여드리는 것을 목적으로 작성되었습니다.
 
-=== Who This Book Is For
+=== 이 책은 누가 읽으면 좋을까요?
 
-This book serves as a guide or tutorial to the Python programming language. It is mainly targeted
-at newbies. It is useful for experienced programmers as well.
+이 책은 파이썬의 가이드 혹은 튜토리얼의 역할을 하도록 작성되었습니다.
+프로그래밍에 대해 아무런 지식이 없는 '완전 초보자'들을 주 독자로 설정하였습니다.
+물론 경험이 많은 프로그래머들에게도 유용한 책입니다.
 
-The aim is that if all you know about computers is how to save text files, then you can learn
-Python from this book. If you have previous programming experience, then you can also learn Python
-from this book.
+이 책의 목표는 컴퓨터로 텍스트 문서를 저장하는 것밖에 모르는 사람도 이 책을 통해
+파이썬을 배울 수 있도록 하는 것입니다. 물론 당신이 이전에 프로그래밍 경험이 있다고 하더라도,
+이 책을 통해 파이썬을 익힐 수 있을 것입니다.
 
-If you do have previous programming experience, you will be interested in the differences between
-Python and your favorite programming language - I have highlighted many such differences. A little
-warning though, Python is soon going to become your favorite programming language!
+만약 당신이 프로그래밍 경험을 가지고 있다면, 아마도 당신은 당신이 가장 좋아하는 언어와 파이썬의
+차이점에 관심을 갖게 될 것입니다. 저는 이 책에서 다른 언어와 파이썬과의 많은 차이점을 강조해 두었습니다.
+작은 주의를 드리자면, 얼마 안 지나서 당신이 가장 좋아하는 언어는 파이썬이 될 것입니다!
 
 [[history_lesson]]
 === History Lesson
@@ -67,12 +68,12 @@ The book needs the help of its readers such as yourselves to point out any parts
 are not good, not comprehensible or are simply wrong. Please {contact}[write to the main author] or
 the respective <<translations,translators>> with your comments and suggestions.
 
-=== Official Website
+=== 공식 홈페이지
 
 The official website of the book is {homepage} where you can read the whole book online, download
 the latest versions of the book, {buy}[buy a printed hard copy] and also send me feedback.
 
-=== Something To Think About
+=== 생각할 것들
 
 [quote,C. A. R. Hoare]
 __________________________________________________

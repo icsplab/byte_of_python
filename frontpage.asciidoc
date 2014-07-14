@@ -1,5 +1,5 @@
-﻿[[frontpage]]
-==  참고
+[[frontpage]]
+==  책머리
 
 //////////////////////////////////////////////////
 현재 Python 3이 최신 버전이지만, 이 책은 Python 2에 대응합니다.
@@ -121,7 +121,7 @@ book, without it I would be clueless about Python and programming. Thanks a mill
 to _break the message down_ to a level that beginners can understand and not everyone can.
 __________________________________________________
 
-[quote,Chris-Andr챕 Sommerseth]
+[quote,Chris-André Sommerseth]
 __________________________________________________
 I love your book! It is the greatest Python tutorial ever, and a very useful reference. Brilliant,
 a true masterpiece! Keep up the good work!
@@ -330,11 +330,11 @@ __________________________________________________
 
 이 책은 NASA에서도 읽혀지고 있습니다!
 http://dsnra.jpl.nasa.gov/software/Python/byte-of-python/output/byteofpython_html/[제트 추진 연구소(Jet Propulsion
-Laboratory)] 소속 Deep Space Network 프로젝트에서 이용되고 있습니다.
+Laboratory)] 의 Deep Space Network 프로젝트에서 이용되고 있습니다.
 
 === 수업 교재
 
-이책은 다음과 같은 교육 기관에서 교재로 이용되었거나, 이용되고 있습니다.
+이 책은 다음과 같은 교육 기관에서 교재로 이용되었거나, 이용되고 있습니다.
 
 - 'Principles of Programming Languages' course at
   http://www.few.vu.nl/~nsilvis/PPL/2007/index.html['Vrije Universiteit, Amsterdam']
@@ -372,7 +372,7 @@ Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩�
 - 이 책의 전자책/출력본을 판매하실 경우, 명백하고 눈에 잘 띄는 방법으로 이 책의 원 저자로부터 판매되는 것이 *아님을* 명시하지 않는 한
   이 책을 판매하실 수 *없습니다*.
 - 이러한 권리에 관련된 내용은 *반드시* 책의 도입부에 적혀 있어야 하며,
-  이 문서의 첫 페이지에는 {homepage}로 연결되는 링크가 반드시 있어야 하고,
+  이 문서의 첫 페이지에는 {homepage} 로 연결되는 링크가 반드시 있어야 하고,
   원 저자의 글을 이 곳에서 내려받을 수 있다는 사실을 명시해야 합니다.
 - 따로 명시되어 있지 않는 한, 이 책에서 사용된 모든 코드 및 스크립트는
   http://www.opensource.org/licenses/bsd-license.php[3-clause BSD License]
@@ -380,12 +380,12 @@ Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩�
 
 === 책을 읽으세요!
 
-{homepage}에서 이 책을 온라인으로 읽으실 수 있습니다.
+{homepage} 에서 이 책을 온라인으로 읽으실 수 있습니다.
 
 === 책 구입하기
 
 종이 책을 좋아하시는 분들, 혹은 이 책의 발전과 개선을 위해 도움을 주시려는 분들께서는
-이 책의 하드카피 출력본을 {buy}에서 구입할 수 있습니다.
+이 책의 하드카피 출력본을 {buy} 에서 구입할 수 있습니다.
 
 === 내려받기
 
@@ -394,7 +394,7 @@ Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩�
 - http://files.swaroopch.com/python/byte_of_python.mobi[Mobi (아마존 킨들)]
 - https://github.com/swaroopch/byte_of_python[GitHub] (책 원문, 번역 등)
 
-이 책의 지속적인 발전을 바라신다면, {buy}에서 책을 구매하시는 것을 고려해 주세요.
+이 책의 지속적인 발전을 바라신다면, {buy} 에서 책을 구입하시는 것을 고려해 주세요.
 
 === 번역본 읽기
 

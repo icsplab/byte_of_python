@@ -1,9 +1,9 @@
-﻿= A Byte of Python
+= A Byte of Python
 :Author: Swaroop C H
 :Email: swaroop@swaroopch.com
 :Revision: 3.0
 :doctype: book
-:lang: kr
+:lang: ko
 :homepage: http://swaroopch.com/notes/python
 :buy: http://swaroopch.com/buybook
 :contact: http://swaroopch.com/contact
