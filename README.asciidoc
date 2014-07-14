@@ -1,10 +1,12 @@
-== A Byte of Python
+== Korean translation of  A Byte of Python
 
 Original author of this book is Swaroop C H.
 The website of original book is http://swaroopch.com/notes/python/[http://swaroopch.com/notes/python/].
 
 Jeongbin Park is translating the book in Korean.
 If you find any error or want to give some comments, please notify me via pjb7687@gmail.com.
+
+== A Byte of Python
 
 "A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial
 or guide to the Python language for a beginner audience. If all you know about computers is how to
