@@ -296,22 +296,21 @@ TIP: 사실 파이썬에는 '최대값을 찾는' 내장 함수 `max` 가 이미
 
 
 [[docstrings]]
-=== DocStrings
+=== DocString
 
-파이썬은 *설명(Documentation) 문자열(Strings)* 이라는, 짧게 DocStrings라 불리우는 
-Python has a nifty feature called *documentation strings*, usually referred to by its shorter name
-*docstrings*. DocStrings are an important tool that you should make use of since it helps to
-document the program better and makes it easier to understand. Amazingly, we can even get the
-docstring back from, say a function, when the program is actually running!
+파이썬은 *설명(Documentation) 문자열(String)* 이라고 불리우는, 짧게 줄여서 DocStrings라 불리우는 
+편리한 기능을 가지고 있습니다. DocString은 여러분이 만든 프로그램을 알아보기 쉽게 해 주고,
+또 후에 프로그램에 대한 설명서를 작성할 때 유용하게 사용될 수 있는 중요한 도구입니다. 
+아래 예제와 같이, DocString은 프로그램이 실행중일 때도 읽어올 수 있습니다.
 
-Example (save as `function_docstring.py`):
+예제 (`function_docstring.py` 로 저장하세요):
 
 [source,python]
 --------------------------------------------------
 include::programs/function_docstring.py[]
 --------------------------------------------------
 
-Output:
+출력 예시:
 
 --------------------------------------------------
 include::programs/function_docstring.txt[]
@@ -319,7 +318,7 @@ include::programs/function_docstring.txt[]
 
 .동작 원리
 
-함수에 포함된 첫 논리적 명령행의 문자열은 함수의 *DocString* 이라고 불리우는 것입니다.
+함수에 포함된 첫 논리적 명령행에 적어둔 문자열은 함수의 *DocString* 이라고 불리우는 것입니다.
 여기에서 설명하는 DocString은 <<module,모듈>> 과 <<oop,클래스>> 에도 똑같이 적용됩니다.
 각각에 대해서는 각 챕터에서 좀 더 자세히 알아보도록 하겠습니다.
 
@@ -342,10 +341,10 @@ DocString은 일반적으로 첫째줄의 첫문자는 대문자로, 마지막 �
 따라서, 저는 여러분이 어떤 함수를 작성하시던지 DocString을 작성할 것을 *강력히 권합니다*.
 파이썬과 함께 설치되는 `pydoc` 또한 `help()` 와 비슷한 방법으로 DocString을 이용하여 동작합니다.
 
-=== Summary
+=== 요약
 
-We have seen so many aspects of functions but note that we still haven't covered all aspects of
-them. However, we have already covered most of what you'll use regarding Python functions on an
-everyday basis.
+지금까지 함수에 대해 많은 것들을 알아 보았습니다만, 사실 아직 모든 기능을 다 알아본 것은 아닙니다.
+그러나, 실제적으로 사용되는 기능에 대해서는 거의 모든 것을 설명해 드렸기 때문에 아마 앞으로
+매일매일 프로그램을 작성할 때는 별 무리가 없을 것입니다.
 
-Next, we will see how to use as well as create Python modules.
+다음으로는, 모듈을 작성하고 사용하는 방법에 대해 알아보도록 하겠습니다.
