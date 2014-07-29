@@ -55,39 +55,35 @@ include::programs/ds_using_list.txt[]
 
 .동작 원리
 
-변수 `shoplist` 는 
+여러분이 장 보러 갈 때 장바구니 목록을 변수 `shoplist` 에 담아 두었다고 합시다. `shoplist` 에는,
+구매할 항목들의 이름 문자열들만이 담겨 있습니다만 사실 리스트에는 _어떤 종류의 객체_든지 담을 수
+있으며 숫자라던지 심지어는 리스트 안에 리스트도 담을 수 있습니다.
 
-is a shopping list for someone who is going to the market. In `shoplist`,
-we only store strings of the names of the items to buy but you can add _any kind of object_ to a
-list including numbers and even other lists.
+여기서는 `for..in` 반복문을 사용하여 리스트 안에 담겨 있는 항목들을 하나씩 반복하여 읽어왔습니다.
+지금쯤 여러분은 리스트가 하나의 열거 형식의 예가 됨을 알게 되셨을 것입니다. 열거 형식의 특수성에
+대해서는 <<sequence,뒤 섹션>>에서 다루겠습니다.
 
-We have also used the `for..in` loop to iterate through the items of the list. By now, you must
-have realised that a list is also a sequence. The speciality of sequences will be discussed in a
-<<sequence,later section>>.
+`print` 문 맨 뒤에 추가한 쉼표는 출력될 내용 뒤에 줄바꿈 기호 대신 공백을 출력하도록 지정해 준
+것입니다. 쉼표는 파이썬에게 앞으로 출력될 내용을 같은 줄에 이어서 출력하라고 알려 주는 것이라고
+생각하시기 바랍니다.
 
-Notice the use of the trailing comma in the `print` statement to indicate that we want to end the
-output with a space instead of the usual line break. Think of the comma as telling Python that we
-have more items to print on the same line.
+다음으로, 앞서 설명했던 리스트 객체의 `append` 메소드를 이용해서 리스트에 항목을 한 개 추가합니다.
+그리고, 추가된 항목이 제대로 추가되었는지 확인하기 위해 `print` 문에 리스트를 넘겨 주어 리스트의
+내용을 화면에 예쁘게 출력하게 해 줍니다.
 
-Next, we add an item to the list using the `append` method of the list object, as already discussed
-before. Then, we check that the item has been indeed added to the list by printing the contents of
-the list by simply passing the list to the `print` statement which prints it neatly.
+이제 리스트의 `sort` 메소드를 이용하여 리스트의 내용을 정렬해 줍니다. 여기서 이 메소드는 해당
+리스트 자체를 변화시키며 수정된 리스트를 또 반환해주지 않는데 이 점을 이해하는 것이 중요합니다.
+즉 _정적_인 문자열과 달리 리스트는 변화될 수 있는 성질을 지녔으며 이것을  _비정적_이라 합니다.
 
-Then, we sort the list by using the `sort` method of the list. It is important to understand that
-this method affects the list itself and does not return a modified list - this is different from
-the way strings work. This is what we mean by saying that lists are _mutable_ and that strings are
-_immutable_.
+다음으로 시장에서 물건을 구매하면 이제 장바구니 목록에서 해당 항목을 지워야 할 것입니다. 이 때
+`del` 문을 사용하여 항목을 삭제합니다. 항목을 삭제할 때는 어떤 항목을 지울지 `del` 문에 알려 주면
+리스트로부터 해당 항목이 삭제됩니다. 여기서는 `del shoplist[0]` 이라고 입력하여 첫 번째 항목을
+삭제할 것임을 알려 주었습니다 (파이썬은 숫자를 0부터 센다는 점을 기억하시기 바랍니다).
 
-Next, when we finish buying an item in the market, we want to remove it from the list. We achieve
-this by using the `del` statement. Here, we mention which item of the list we want to remove and
-the `del` statement removes it from the list for us.  We specify that we want to remove the first
-item from the list and hence we use `del shoplist[0]` (remember that Python starts counting from
-0).
-
-If you want to know all the methods defined by the list object, see `help(list)` for details.
+리스트 객체가 갖고 있는 모든 메소드에 대해 알고 싶으시면, `help(list)` 를 입력해 보시기 바랍니다.
 
 [[tuple]]
-=== Tuple
+=== 튜플
 
 Tuples are used to hold together multiple objects. Think of them as similar to lists, but without
 the extensive functionality that the list class gives you. One major feature of tuples is that they
