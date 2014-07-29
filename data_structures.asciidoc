@@ -1,61 +1,63 @@
 [[data_structures]]
-== Data Structures
+== 자료 구조
 
-Data structures are basically just that - they are *structures* which can hold some *data*
-together. In other words, they are used to store a collection of related data.
+자료 구조란 간단하게, 어떤 *자료*를 담는 *구조*를 말합니다. 다른 말로 하면, 서로 연관있는 어떤
+자료들의 집합을 저장하는 데 사용됩니다.
 
-There are four built-in data structures in Python - _list, tuple, dictionary and set_. We will see
-how to use each of them and how they make life easier for us.
+파이썬에는 네 종류의 자료 구조가 있는데, 각각 _리스트, 튜플, 사전, 집합_입니다. 이제 앞으로
+각각의 사용법에 대해 알아보고 또 각각이 얼마나 편리한지 확인해보도록 하겠습니다.
 
 [[list]]
-=== List
+=== 리스트
 
-A `list` is a data structure that holds an ordered collection of items i.e. you can store a
-*sequence* of items in a list. This is easy to imagine if you can think of a shopping list where
-you have a list of items to buy, except that you probably have each item on a separate line in your
-shopping list whereas in Python you put commas in between them.
+리스트란 순서대로 정리된 항목들을 담고 있는 자료 구조입니다. 즉, 리스트에는 항목의 *목록*을
+저장할 수 있습니다. 이것은 쉽게 말하자면 장 보러 갈 때 적는 일종의 장바구니 목록 같은 것인데,
+아마도 여러분은 각 품목들을 한줄 한줄 적겠지만 파이썬에서는 쉼표로 각 항목을 구분한다는 것만
+다릅니다.
 
-The list of items should be enclosed in square brackets so that Python understands that you are
-specifying a list. Once you have created a list, you can add, remove or search for items in the
-list. Since we can add and remove items, we say that a list is a *mutable* data type i.e. this type
-can be altered.
+리스트를 정의할 때는 대괄호 `[]` 를 이용해서 파이썬에게 이것이 리스트를 의미한다는 것을 알려 줍니다.
+한번 리스트를 만들어 두면 여기에 새로운 항목을 추가하거나 삭제할 수 있으며, 특정 항목이 존재하는지
+검색할 수도 있습니다. 이 때 항목을 추가 및 삭제가 가능하다는 것을 *비정적(mutable)*이라고 하며,
+리스트는 비정적 자료구조로 내부 항목을 변경할 수 있습니다.
 
-=== Quick Introduction To Objects And Classes
+=== 객체와 클래스에 대한 간단한 소개
 
-Although I've been generally delaying the discussion of objects and classes till now, a little
-explanation is needed right now so that you can understand lists better. We will explore this topic
-in detail in a <<oop,later chapter>>.
+객체와 클래스에 대해서는 좀 더 나중에 다룰 예정이지만, 여기서 여러분이 리스트에 대해 좀 더 잘
+이해하실 수 있도록 이에 대한 간단한 소개를 하도록 하겠습니다. 이들에 대해서는 <<oop,뒤 챕터>>에서 
+좀 더 자세하게 다루겠습니다.
 
-A list is an example of usage of objects and classes. When we use a variable `i` and assign a value
-to it, say integer `5` to it, you can think of it as creating an *object* (i.e. instance) `i` of
-*class* (i.e. type) `int`. In fact, you can read `help(int)` to understand this better.
+리스트는 객체와 클래스가 사용된 한 예입니다. 변수 `i` 를 선언하고 예를 들어 `5` 라는 값을 할당해
+주는 것은, `int` 라는 *클래스*(또는 타입)의 *객체*(또는 인스턴스) `i` 를 만드는 것입니다.
+이에 대해 좀 더 자세히 알아보시려면 `help(int)` 를 읽어보시기 바랍니다.
 
-A class can also have *methods* i.e. functions defined for use with respect to that class only. You
-can use these pieces of functionality only when you have an object of that class. For example,
-Python provides an `append` method for the `list` class which allows you to add an item to the end
-of the list. For example, `mylist.append('an item')` will add that string to the list
-`mylist`. Note the use of dotted notation for accessing methods of the objects.
+클래스는 *메소드*를 가질 수 있는데, 여기서 메소드란 그 클래스 내에 정의된 고유의 내장 함수들을
+말합니다. 또 이러한 내장 함수들은 클래스로 객체를 생성했을 때에야 비로소 사용할 수 있습니다. 예를 들어,
+파이썬은 `list` 클래스에 `append` 라는 메소드를 제공하며 이는 리스트의 마지막에 항목을 한 개 추가할
+때 사용되는 메소드입니다. 즉 `mylist.append('an item')` 라 하면 리스트 `mylist` 의 마지막에 해당
+문자열을 추가해 줍니다. 이 때 객체의 메소드에 접근할 때에도 마침표를 이용한다는 점을 기억하세요.
 
-A class can also have *fields* which are nothing but variables defined for use with respect to that
-class only. You can use these variables/names only when you have an object of that class. Fields
-are also accessed by the dotted notation, for example, `mylist.field`.
+또 클래스는 *필드*를 가질 수 있는데 이것은 단순히 그 클래스 내에 정의된 변수들을 의미합니다.
+메소드와 마찬가지로 이러한 변수들은 클래스로 객체를 생성했을 때에야 비로소 사용할 수 있습니다.
+필드도 메소드와 마찬가지로 마침표를 이용하여 접근합니다. 예를 들면 `mylist.field` 와 같습니다.
 
-Example (save as `ds_using_list.py`):
+예제 (`ds_using_list.py` 로 저장하세요):
 
 [source,python]
 --------------------------------------------------
 include::programs/ds_using_list.py[]
 --------------------------------------------------
 
-Output:
+출력 예시:
 
 --------------------------------------------------
 include::programs/ds_using_list.txt[]
 --------------------------------------------------
 
-.How It Works
+.동작 원리
 
-The variable `shoplist` is a shopping list for someone who is going to the market. In `shoplist`,
+변수 `shoplist` 는 
+
+is a shopping list for someone who is going to the market. In `shoplist`,
 we only store strings of the names of the items to buy but you can add _any kind of object_ to a
 list including numbers and even other lists.
 
