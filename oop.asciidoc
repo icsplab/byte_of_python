@@ -67,99 +67,98 @@ Development Environment)를 사용하는 사람들도 이를 쉽게 알아볼 �
 추가해 주어야 한다는 것을 의미합니다.
 
 [[class]]
-=== Classes
+=== 클래스
 
-The simplest class possible is shown in the following example (save as `oop_simplestclass.py`).
+가장 단순한 클래스의 예시가 아래 예제에 나타나 있습니다(`oop_simplestclass.py` 로 저장하세요).
 
 [source,python]
 --------------------------------------------------
 include::programs/oop_simplestclass.py[]
 --------------------------------------------------
 
-Output:
+출력 예시:
 
 --------------------------------------------------
 include::programs/oop_simplestclass.txt[]
 --------------------------------------------------
 
-.How It Works
+.동작 원리
 
-We create a new class using the `class` statement and the name of the class. This is followed by an
-indented block of statements which form the body of the class. In this case, we have an empty block
-which is indicated using the `pass` statement.
+먼저 `class` 문을 사용하여 새로운 클래스를 생성하였고 적당한 이름을 지어 주었습니다. 그 아래로는
+들여쓰기 된 새로운 블록이 시작되며 이 블록은 클래스의 몸체를 구성합니다. 위 예제의 경우에는
+`pass` 문으로 해당 블록이 빈 블록임을 나타내 주었습니다.
 
-Next, we create an object/instance of this class using the name of the class followed by a pair of
-parentheses. (We will learn <<init,more about instantiation>> in the next section). For our
-verification, we confirm the type of the variable by simply printing it. It tells us that we have
-an instance of the `Person` class in the `__main__` module.
+다음으로, 이 클래스의 이름 뒤에 괄호를 열고 닫아 주어 클래스의 객체/인스턴스를 만들었습니다
+(다음 섹션에서 <<init,객체 초기화>> 에 대해 좀 더 자세히 배울 것입니다). 객체가 잘 생성되었는지
+확인해 보기 위해, 정의한 변수명을 입력하여 결과를 확인해 봅니다. 그러면 이 객체는 `__main__` 모듈의
+`Person` 클래스의 인스턴스임을 알 수 있습니다.
 
-Notice that the address of the computer memory where your object is stored is also printed. The
-address will have a different value on your computer since Python can store the object wherever it
-finds space.
+또 객체가 실제로 저장된 컴퓨터 메모리의 위치가 함께 반환되는 것을 확인하시기 바랍니다. 컴퓨터마다
+그 객체를 저장하기 위한 빈 공간이 위치한 곳이 다를 것이므로 컴퓨터마다 이 값은 다르게 출력될
+것입니다.
 
 [[methods]]
-=== Methods
+=== 메소드
 
-We have already discussed that classes/objects can have methods just like functions except that we
-have an extra `self` variable. We will now see an example (save as `oop_method.py`).
+앞서 클래스/객체는 메소드를 가질 수 있으며, 메소드는 추가된 `self` 변수를 제외하고 함수와 똑같다는
+것에 대해 이야기했습니다. 아래는 예제입니다(`oop_method.py` 로 저장하세요).
 
 [source,python]
 --------------------------------------------------
 include::programs/oop_method.py[]
 --------------------------------------------------
 
-Output:
+출력 예시:
 
 --------------------------------------------------
 include::programs/oop_method.txt[]
 --------------------------------------------------
 
-.How It Works
+.동작 원리
 
-Here we see the `self` in action. Notice that the `say_hi` method takes no parameters but still has
-the `self` in the function definition.
+위 예제는 `self` 가 어떻게 동작하는지 보여줍니다. 여기서 `say_hi` 메소드는 아무 매개 변수도 
+넘겨받지 않지만 함수 정의에 `self` 를 가지고 있음을 확인하시기 바랍니다.
 
 [[init]]
-=== The `__init__` method
+=== `__init__` 메소드
 
-There are many method names which have special significance in Python classes. We will see the
-significance of the `__init__` method now.
+파이썬의 클래스에는 여러가지 특별한 메소드 이름이 존재합니다. 우선 그 중 `__init__` 메소드의
+중요성에 대해 알아보겠습니다.
 
-The `__init__` method is run as soon as an object of a class is instantiated. The method is useful
-to do any *initialization* you want to do with your object. Notice the double underscores both at
-the beginning and at the end of the name.
+`__init__` 메소드는 클래스가 인스턴스화 될 때 호출됩니다. 따라서 이 메소드는 객체가 생성될 때
+여러가지 *초기화* 명령들이 필요할 때 유용하게 사용됩니다. 여기서 init의 앞과 뒤에 있는 밑줄은
+두 번씩 입력해야 한다는 점을 기억하시기 바랍니다.
 
-Example (save as `oop_init.py`):
+예제 (`oop_init.py` 로 저장하세요):
 
 [source,python]
 --------------------------------------------------
 include::programs/oop_init.py[]
 --------------------------------------------------
 
-Output:
+출력 예시:
 
 --------------------------------------------------
 include::programs/oop_init.txt[]
 --------------------------------------------------
 
-.How It Works
+.동작 원리
 
-Here, we define the `__init__` method as taking a parameter `name` (along with the usual `self`).
-Here, we just create a new field also called `name`. Notice these are two different variables even
-though they are both called 'name'. There is no problem because the dotted notation `self.name`
-means that there is something called "name" that is part of the object called "self" and the other
-`name` is a local variable. Since we explicitly indicate which name we are referring to, there is
-no confusion.
+먼저 매개 변수 `name` 을 넘겨 받는 `__init__` 메소드를 정의합니다(물론 `self`를 포함하여 정의합니다).
+그리고, `name` 이라는 필드를 생성합니다. 이 때 두 다른 변수의 이름으로 'name' 이라는 동일한
+이름을 지정해 주었다는 점에 주목하시기 바랍니다. 이것이 문제가 되지 않는 이유는 하나는
+"self" 라 칭해지는 객체에 내장된 것으로써 `self.name` 의 형태로 사용되며 또 하나인 `name` 은
+지역 변수를 의미하는 것으로 사용되기 때문입니다. 프로그램 상에서 각각을 완전하게 구분할
+수 있으므로, 혼란이 일어나지 않습니다.
 
-Most importantly, notice that we do not explicitly call the `__init__` method but pass the
-arguments in the parentheses following the class name when creating a new instance of the
-class. This is the special significance of this method.
+위 예제에서 가장 중요한 것은, 우리가 `__init__` 메소드를 직접 호출해 주지 않고 클래스로부터
+인스턴스를 생성할 때 괄호 안에 인수를 함께 넘겨 주었다는 점입니다. 이 점이 이 메소드가 좀
+특별하게 다뤄지는 이유입니다.
 
-Now, we are able to use the `self.name` field in our methods which is demonstrated in the `sayHi`
-method.
+이제, `sayHi` 메소드에서처럼 객체 내부에서 `self.name` 필드를 사용할 수 있습니다.
 
 [[class_obj_vars]]
-=== Class And Object Variables
+=== 클래스 변수와 객체 변수
 
 We have already discussed the functionality part of classes and objects (i.e. methods), now let us
 learn about the data part. The data part, i.e. fields, are nothing but ordinary variables that are
