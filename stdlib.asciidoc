@@ -16,11 +16,10 @@ CAUTION: 이 장에서 다루는 내용은 조금 어려울 수 있습니다. �
 
 === +sys+ 모듈
 
-`sys` 모듈은 시스템의 기능을 다루는 함수들이 담겨 있습니다. We have already seen that the `sys.argv`
-list contains the command-line arguments.
+`sys` 모듈에는 시스템의 기능을 다루는 여러 함수들이 들어 있습니다. 예를 들어 `sys.argv` 리스트에는
+명령줄 인수들이 들어 있습니다.
 
-Suppose we want to check the version of the Python software being used, the `sys` module gives us
-that information.
+또 `sys` 모듈을 통해 현재 사용하고 있는 파이썬의 버전을 알아올 수 있습니다.
 
 --------------------------------------------------
 $ python
@@ -31,32 +30,33 @@ sys.version_info(major=2, minor=7, micro=6, releaselevel='final', serial=0)
 True
 --------------------------------------------------
 
-.How It Works
+.동작 원리
 
-The `sys` module has a `version_info` tuple that gives us the version information. The first entry
-is the major version. We can pull out this information to use it.
+`sys` 모듈에는 `version_info` 라고 하는 파이썬의 버전 정보가 담겨 있는 튜플이 들어 있습니다.첫 번째
+항목은 주 버전을 의미합니다. 이제 이 정보를 읽어와 사용할 수 있습니다.
 
 [[logging]]
-=== logging module
+=== logging 모듈
 
-What if you wanted to have some debugging messages or important messages to be stored somewhere so
-that you can check whether your program has been running as you would expect it? How do you "store
-somewhere" these messages? This can be achieved using the `logging` module.
+여러분이 디버그를 할 때 중간에 변수들의 내용 등을 출력하고 싶거나 혹은 실행시 중요한 메시지를 어딘가에
+저장해 두게 하여 여러분의 프로그램이 제대로 실행되고 있는 지 확인하고 싶을 때 어떻게 하면 좋을까요?
+어떻게 이러한 메시지들을 "어딘가에 저장해" 둘 수 있을까요? 이를 위해 `logging` 모듈을 사용합니다.
 
-Save as `stdlib_logging.py`:
+`stdlib_logging.py` 로 저장하세요:
 
 [source,python]
 --------------------------------------------------
 include::programs/stdlib_logging.py[]
 --------------------------------------------------
 
-Output:
+출력 예시:
 
 --------------------------------------------------
 include::programs/stdlib_logging.txt[]
 --------------------------------------------------
 
-If you do not have the `cat` command, then you can just open the `test.log` file in a text editor.
+여러분의 명령행 환경에서 `cat` 명령을 사용할 수 없을 경우, 아무 텍스트 에디터에서나  `test.log`
+파일을 열어서 내용을 확인해 보실 수 있습니다.
 
 .How It Works
 
