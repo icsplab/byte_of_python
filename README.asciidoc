@@ -1,4 +1,10 @@
-== Korean Translation of  A Byte of Python
+== A Byte Of Python 한국어 번역(Korean Translation of A Byte of Python)
+
+이 책의 원 저자는 Swaroop C H 입니다.
+책의 영어 원문은 http://swaroopch.com/notes/python/[http://swaroopch.com/notes/python/] 에서 확인하실 수 있습니다.
+
+이 책은 아직 번역 중입니다.
+번역에 문제가 있거나 의견 주시려면 pjb7687@gmail.com 으로 메일 주시기 바랍니다.
 
 Original author of this book is Swaroop C H.
 The website of original book is http://swaroopch.com/notes/python/[http://swaroopch.com/notes/python/].
