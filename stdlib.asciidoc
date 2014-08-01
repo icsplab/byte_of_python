@@ -1,25 +1,22 @@
 [[stdlib]]
-=== Standard Library
+=== 표준 라이브러리
 
-The Python Standard Library contains a huge number of useful modules and is part of every standard
-Python installation. It is important to become familiar with the Python Standard Library since many
-problems can be solved quickly if you are familiar with the range of things that these libraries
-can do.
+파이썬 표준 라이브러리는 파이썬을 설치할 때 항상 함께 설치되는 많은 수의 유용한 모듈들을 말합니다.
+파이썬 표준 라이브러리에 익숙해지면 이를 이용해 해결할 수 있는 많은 문제들을 좀 더 빠르고 쉽게
+해결할 수 있습니다.
 
-We will explore some of the commonly used modules in this library. You can find complete details
-for all of the modules in the Python Standard Library in the
-http://docs.python.org/2/library/['Library Reference' section] of the documentation that comes with
-your Python installation.
+지금부터 표준 라이브러리에 포함된 많은 모듈 중에서 자주 사용되는 몇가지 모듈에 대해 알아볼 것입니다.
+파이썬 표준 라이브러리에 포함된 모든 모듈에 대한 자세한 설명은 파이썬과 함께 설치되는 설명서의
+http://docs.python.org/2/library/['라이브러리 레퍼런스' 섹션] 에서 확인해 보실 수 있습니다.
 
-Let us explore a few useful modules.
+여기서는 유용한 몇 개의 모듈만 다뤄 보겠습니다.
 
-CAUTION: If you find the topics in this chapter too advanced, you may skip this chapter. However, I
-highly recommend coming back to this chapter when you are more comfortable with programming using
-Python.
+CAUTION: 이 장에서 다루는 내용은 조금 어려울 수 있습니다. 그런 경우 일단 이 장을 읽지 말고 넘기세요.
+그렇지만 여러분이 파이썬에 좀 더 익숙해지게 되면 이 장으로 다시 돌아오기를 강력히 권합니다.
 
-=== +sys+ module
+=== +sys+ 모듈
 
-The `sys` module contains system-specific functionality. We have already seen that the `sys.argv`
+`sys` 모듈은 시스템의 기능을 다루는 함수들이 담겨 있습니다. We have already seen that the `sys.argv`
 list contains the command-line arguments.
 
 Suppose we want to check the version of the Python software being used, the `sys` module gives us
