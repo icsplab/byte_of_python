@@ -1,7 +1,7 @@
 [[What Next]]
 
-이 책의 내용을 잘 따라오셨다면 지금까지 많은 파이썬 프로그램을 작성해 보셨을 것이며,
-아마 파이썬에 대한 느낌도 좀 더 편안할 것이고 파이썬에 좀 더 친숙해 졌을 것입니다. 또 이 책의
+지금까지 이 책의 내용을 잘 따라오신 분들이라면 아마 많은 파이썬 프로그램을 작성해 보셨을 것이고,
+아마 파이썬에 대한 느낌도 좀 더 편안할 것이며 파이썬에 좀 더 친숙해 졌을 것입니다. 또 이 책의
 예제 프로그램 이외에도 이것저것 다른 것들도 시도해 보신 분들도 계시겠죠. 혹시 아니라면,
 지금이라도 그렇게 하셔야 합니다. 자, 이제 남은 질문은 하나입니다. '앞으로 무엇을 해 보면 좋을까요?'
 
@@ -127,82 +127,82 @@ PyGTK ::
 http://www.pygtk.org/tutorial.html[PyGTK 튜토리얼]을 읽어 보세요.
 
 PyQt ::
-이것은 KDE을 제작할 때 사용된 Qt 의 파이썬 바인딩입니다. Qt는 Qt Designer라는 디자인 도구 덕택에
-굉장히 사용이 쉽고 강력하며 
-This is the Python binding for the Qt toolkit which is the foundation upon which the KDE is
-built. Qt is extremely easy to use and very powerful especially due to the Qt Designer and the
-amazing Qt documentation. PyQt is free if you want to create open source (GPL'ed) software and you
-need to buy it if you want to create proprietary closed source software. Starting with Qt 4.5 you
-can use it to create non-GPL software as well. To get started, read about
-http://qt-project.org/wiki/PySide[PySide].
+이것은 KDE을 제작할 때 사용된 Qt 의 파이썬 바인딩입니다. Qt는 Qt Designer라는 디자인 도구와 방대한
+문서 덕택에 굉장히 사용이 쉽고 강력한 도구입니다. PyQt는 오픈 소스 (GPL 하에서) 소프트웨어를
+작성하려고 할 때에 무료로 사용할 수 있습니다만, 독점 소프트웨어를 작성하려고 할 때에는 사용권을
+구입하여야 합니다. 또 Qt 4.5 부터는 GPL이 아닌 소프트웨어 또한 작성할 수 있습니다. PyQt를 사용하시려면
+http://qt-project.org/wiki/PySide[PySide] 를 읽어 보세요.
 
 wxPython ::
+이것은 wxWidgets의 파이썬 바인딩입니다. wxPython은 조금 어렵기 때문에 익숙해 지기 까지 조금 시간이
+필요할 수 있습니다. 그러나, wxPython으로 작성된 프로그램은 GNU/Linux, Windows, Mac 등 여러 플랫폼을
+지원하며 심지어 임베디드(embedded) 플랫폼에서도 사용이 가능합니다. 또한
+http://spe.pycs.net/[SPE (Stani's Python Editor)] 나 http://wxglade.sourceforge.net/[wxGlade]
+와 같은 IDE 혹은 GUI 디자인 도구들을 사용할 수 있습니다. wxPython을 이용하여 독점
+소프트웨어 또한 자유롭게 작성이 가능합니다. wxPython을 사용하시려면
+http://zetcode.com/wxpython/[wxPython 튜토리얼]을 읽어 보세요.
 
-This is the Python bindings for the wxWidgets toolkit. wxPython has a learning curve associated
-with it. However, it is very portable and runs on GNU/Linux, Windows, Mac and even embedded
-platforms. There are many IDEs available for wxPython which include GUI designers as well such as
-http://spe.pycs.net/[SPE (Stani's Python Editor)] and the http://wxglade.sourceforge.net/[wxGlade]
-GUI builder. You can create free as well as proprietary software using wxPython. To get started,
-read the http://zetcode.com/wxpython/[wxPython tutorial].
+=== 그 외의 GUI 저작 도구들
 
-=== Summary of GUI Tools
+그 외의 다른 도구들에 대해서는 http://www.python.org/cgi-bin/moinmoin/GuiProgramming[파이썬 공식
+사이트의 GuiProgramming 위키 페이지를 참조하세요].
 
-For more choices, see the http://www.python.org/cgi-bin/moinmoin/GuiProgramming[GuiProgramming wiki
-page at the official python website].
+아직까지는 파이썬을 위한 표준 GUI 저작 도구같은 것이 없으므로, 위 목록에서 여러분의 상황에 맞는
+도구를 하나 골라 사용하시는 것을 추천합니다. 아마 첫 번째 고려해야 할 점은 여러분이 선택한 GUI 저작
+도구를 구입할 지 여부일 것이고, 두 번째 고려해야 할 점은 여러분의 프로그램이 윈도우 환경이나 맥,
+리눅스 중 하나에서만 동작해도 되는지 아니면 모든 환경에서 잘 동작해야 하는지를 결정해야 할 것입니다.
+이 때 여러분이 리눅스 환경을 선택했다면 여러분이 KDE를 사용하는지 GNOME을 사용하는지도 고려 대상이
+될 것입니다.
 
-Unfortunately, there is no one standard GUI tool for Python. I suggest that you choose one of the
-above tools depending on your situation. The first factor is whether you are willing to pay to use
-any of the GUI tools. The second factor is whether you want the program to run only on Windows or
-on Mac and GNU/Linux or all of them. The third factor, if GNU/Linux is a chosen platform, is
-whether you are a KDE or GNOME user on GNU/Linux.
+이에 대한 좀 더 상세하고 포괄적인 분석을 원하신다면,
+http://archive.pythonpapers.org/ThePythonPapersVolume3Issue1.pdf['The Python Papers, Volume 3, Issue 1']
+의 26 페이지를 참조하시기 바랍니다.
 
-For a more detailed and comprehensive analysis, see Page 26 of the
-http://archive.pythonpapers.org/ThePythonPapersVolume3Issue1.pdf['The Python Papers, Volume 3, Issue 1'].
+=== 다양한 파이썬 구현들
 
-=== Various Implementations
+프로그래밍 언어는 크게 두 부분으로 나뉘는데, 그 하나는 언어이고 또 하나는 소프트웨어입니다. 여기서
+언어란 _어떻게_ 프로그램을 작성하는지 정의해 둔 것을 말하며, 소프트웨어란 이렇게 작성된 프로그램을
+실제로 실행시키는 _그 무엇_ 을 말합니다.
 
-There are usually two parts a programming language - the language and the software. A language is
-_how_ you write something. The software is _what_ actually runs our programs.
+지금까지 우리는 여러분이 작성한 프로그램을 실행시키기 위해 _CPython_ 이라는 소프트웨어를 사용해
+왔습니다. 이것은 C 언어로 작성되었기 때문에 CPython이라고 불리우며, _가장 기본적인 파이썬 인터프리터_
+입니다.
 
-We have been using the _CPython_ software to run our programs. It is referred to as CPython because
-it is written in the C language and is the _Classical Python interpreter_.
-
-There are also other software that can run your Python programs:
+그렇지만, 우리가 작성한 파이썬 프로그램을 실행할 수 있는 다양한 다른 소프트웨어들도 존재합니다:
 
 http://www.jython.org[Jython] ::
-A Python implementation that runs on the Java platform. This means you can use Java libraries and
-classes from within Python language and vice-versa.
+이것은 자바 플랫폼 상에서 동작하는 파이썬 구현입니다. 이를 이용하면 파이썬 언어 안에서 자바
+라이브러리 및 클래스를 불러와 사용할 수 있으며, 그 반대도 가능합니다.
 
 http://www.codeplex.com/Wiki/View.aspx?ProjectName=IronPython[IronPython] ::
-A Python implementation that runs on the .NET platform. This means you can use .NET libraries and
-classes from within Python language and vice-versa.
+이것은 .NET 플랫폼 상에서 동작하는 파이썬 구현입니다. 이를 이용하면 파이썬 언어 안에서 .NET
+라이브러리 및 클래스를 불러와 사용할 수 있으며, 그 반대도 가능합니다.
 
 http://codespeak.net/pypy/dist/pypy/doc/home.html[PyPy] ::
-A Python implementation written in Python! This is a research project to make it fast and easy to
-improve the interpreter since the interpreter itself is written in a dynamic language (as opposed
-to static languages such as C, Java or C# in the above three implementations)
+PyPy는 파이썬으로 작성된 파이썬 구현입니다! 이것은 C, Java, C# 등과 같은 정적인 언어를 배제한
+동적 언어로 구현된 인터프리터가 어디까지 빨라질 수 있으며 또 얼마나 쉽게 구현할 수 있는지
+확인해보려는 연구 프로젝트입니다.
 
-There are also others such as http://common-lisp.net/project/clpython/[CLPython] - a Python
-implementation written in Common Lisp and http://brython.info/[Brython] which is an implementation
-on top of a JavaScript interpreter which could mean that you can use Python (instead of JavaScript)
-to write your web-browser ("Ajax") programs.
+이외에도 http://common-lisp.net/project/clpython/[CLPython] (Common Lisp 으로 작성된 파이썬 구현)
+이 있습니다. 또 자바 스크립트 인터프리터 상에서 동작하는 http://brython.info/[Brython] 이 있는데,
+이를 이용하면 자바 스크립트 대신 파이썬을 이용하여 웹 브라우저 상에서 동작하는 프로그램 ("Ajax")을
+제작할 수도 있습니다.
 
-Each of these implementations have their specialized areas where they are useful.
+이러한 각각의 파이썬 구현은 각 분야에서 유용하게 사용됩니다.
 
 [[functional_programming]]
-=== Functional Programming (for advanced readers)
+=== (고급 프로그래머를 위한) 함수형 프로그래밍 
 
-When you start writing larger programs, you should definitely learn more about a functional
-approach to programming as opposed to the class-based approach to programming that we learned in
-the <<oop,object oriented programming chapter>>:
+여러분이 큰 프로그램을 제작해야 할 경우, 앞서 <<oop,객체 지향 프로그래밍 챕터>>에서 배웠던 클래스
+기반 접근 대신 함수형 접근 방법에 대해서도 한번쯤 배워 볼 필요가 있습니다:
 
 - http://docs.python.org/3/howto/functional.html[Functional Programming Howto by A.M. Kuchling]
 - http://www.diveintopython.net/functional_programming/index.html[Functional programming chapter in 'Dive Into Python' book]
 - http://ua.pycon.org/static/talks/kachayev/index.html[Functional Programming with Python presentation]
 
-=== Summary
+=== 요약
 
-We have now come to the end of this book but, as they say, this is the _the beginning of the
-end_!. You are now an avid Python user and you are no doubt ready to solve many problems using
-Python. You can start automating your computer to do all kinds of previously unimaginable things or
-write your own games and much much more. So, get started!
+이제 여러분은 이 책의 마지막에 다다랐습니다. 그러나, 이것은 _또 다른 시작일 뿐입니다_! 여러분은
+이제 열의에 차 있는 한 명의 파이썬 사용자일 것이며, 파이썬을 이용해 더 많은 문제들을 해결할 준비가
+되어 있을 것입니다. 이전에는 생각하지 못했던 여러 자동화 스크립트를 작성해 보시거나, 직접 게임을 만들어
+본다거나 여러 가지 시도를 해 보시기 바랍니다. 자, 이제 시작해 봅시다!
