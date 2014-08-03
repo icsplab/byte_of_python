@@ -6,6 +6,9 @@
 이 책은 아직 번역 중입니다.
 번역에 문제가 있거나 의견 주시려면 pjb7687@gmail.com 으로 메일 주시기 바랍니다.
 
+- HTML 버전 읽기: http://byteofpython-korean.sourceforge.net/byte_of_python.html
+- PDF 버전 읽기: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
+
 Original author of this book is Swaroop C H.
 The website of original book is http://swaroopch.com/notes/python/[http://swaroopch.com/notes/python/].
 
