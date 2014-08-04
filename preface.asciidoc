@@ -79,13 +79,16 @@
 
 [quote,C. A. R. Hoare]
 __________________________________________________
-There are two ways of constructing a software design: one way is to make it so simple that there
+소프트웨어를 설계하는 데에는 두 가지 방법이 있습니다. 하나는 설계를 굉장히 간단하게 하여서 결함이
+없도록 하는 것입니다. 또 하나는 설계를 아주 완벽하게 하여 결함이 있을 수 없도록 하는 것입니다.
+(There are two ways of constructing a software design: one way is to make it so simple that there
 are obviously no deficiencies; the other is to make it so complicated that there are no obvious
-deficiencies.
+deficiencies.)
 __________________________________________________
 
 [quote,C. W. Wendte]
 __________________________________________________
-Success in life is a matter not so much of talent and opportunity as of concentration and
-perseverance.
+삶에 있어 성공이라고 하는 것은 재능과 요행보다는 집중력과 참을성에 달려 있습니다.
+(Success in life is a matter not so much of talent and opportunity as of concentration and
+perseverance.)
 __________________________________________________
