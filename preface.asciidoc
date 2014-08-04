@@ -3,9 +3,9 @@
 == 서문
 
 파이썬은 간단하면서도 강력한, 몇 안되는 프로그래밍 언어들 중 하나일 것입니다.
-파이썬은 초보자는 물론 숙련자에게도 잘 어울리지만, 가장 중요한 점은, 파이썬으로 프로그래밍 하는 것은 즐겁습니다.
-이 책은 당신이 파이썬이라는 아름다운 프로그래밍 언어를 배우고,
-당신이 하려는 일을 빠르고 쉽게 해결하는 방법을 보여드리는 것을 목적으로 작성되었습니다.
+파이썬은 초보자와 숙련자에게 모두 유용한 언어이며, 또 파이썬 프로그래밍은 즐겁습니다.
+이 책은 여러분이 파이썬이라는 아름다운 프로그래밍 언어를 배우고,
+여러분이 하고자 하는 일을 빠르고 쉽게 해결하는 방법을 보여드리는 것을 목적으로 작성되었습니다.
 
 === 이 책은 누가 읽으면 좋을까요?
 
@@ -14,12 +14,12 @@
 물론 경험이 많은 프로그래머들에게도 유용한 책입니다.
 
 이 책의 목표는 컴퓨터로 텍스트 문서를 저장하는 것밖에 모르는 사람도 이 책을 통해
-파이썬을 배울 수 있도록 하는 것입니다. 물론 당신이 이전에 프로그래밍 경험이 있다고 하더라도,
+파이썬을 배울 수 있도록 하는 것입니다. 물론 여러분이 이전에 프로그래밍 경험이 있다고 하더라도
 이 책을 통해 파이썬을 익힐 수 있을 것입니다.
 
-만약 당신이 프로그래밍 경험을 가지고 있다면, 아마도 당신은 당신이 가장 좋아하는 언어와 파이썬의
-차이점에 관심을 갖게 될 것입니다. 저는 이 책에서 다른 언어와 파이썬과의 많은 차이점을 강조해 두었습니다.
-작은 주의를 드리자면, 얼마 안 지나서 당신이 가장 좋아하는 언어는 파이썬이 될 것입니다!
+만약 여러분이 전에 프로그래밍 경험을 가지고 있다면, 아마도 여러분은 여러분이 가장 좋아하는 언어와 파이썬이
+어떻게 다른지에 대해 관심이 있을 것입니다. 저는 이 책에서 다른 언어와 파이썬과의 많은 차이점을 강조해 두었습니다.
+하지만 주의하세요, 얼마 안 지나서 당신이 가장 좋아하는 언어는 파이썬이 될 것입니다!
 
 [[history_lesson]]
 === History Lesson
@@ -43,36 +43,37 @@
 불현듯 KWord를 사용하여 파이썬에 대해 뭔가 적어보자는 생각이 떠올랐습니다. 처음에는 몇 장으로
 시작했지만 곧 30 페이지 정도의 문서가 되었습니다. 그렇게 되니 좀 더 내용을 정리해서 책의 형태로
 만들면 좀 더 유용하겠다는 생각을 했습니다. 그 후 _많은_ 재작성 끝에, 파이썬이라는 언어를 익히는
-데 유용한 이 가이드를 만들 수 있었습니다. I consider
-this book to be my contribution and tribute to the open source community.
+데 유용한 이 가이드를 만들 수 있었습니다. 저는 이 책이 저의 기여로 만들어졌지만 오픈 소스
+공동체에 기여할 수 있기를 바랍니다.
 
-This book started out as my personal notes on Python and I still consider it in the same way,
-although I've taken a lot of effort to make it more palatable to others :)
+이 책은 파이썬에 대한 저의 개인 노트에서 출발했고, 앞으로도 같은 방식으로 편집될 것입니다.
+물론 다른 사람들이 이 책을 읽기 쉽게 하기 위한 노력 또한 계속 기울일 것이고요 :)
 
-In the true spirit of open source, I have received lots of constructive suggestions, criticisms and
-<<who_reads_bop,feedback>> from enthusiastic readers which has helped me improve this book a lot.
+또 오픈 소스 정신 안에서, 지금까지 많은 열정적인 독자을의 제안과 비평 그리고 <<who_reads_bop,피드백>>
+을 통해 이 책이 성장할 수 있었음을 알립니다.
 
-=== Status Of The Book
+=== 변천사
 
-- Latest update of this book was in Mar-Apr 2014, converted to
-  http://asciidoctor.org/docs/what-is-asciidoc/[Asciidoc] using
-  http://swaroopch.com/2013/10/17/emacs-configuration-tutorial/[Emacs 24] and
-  https://github.com/sensorflo/adoc-mode/wiki[adoc-mode].
-- In Dec 2008, the book was updated for the Python 3.0 release (one of the first books to do
-  so). But now, I have converted the book back for Python 2 language because readers would often
-  get confused between the default Python 2 installed on their systems vs. Python 3 which they had
-  to separately install and all the tooling, esp. editors would assume Python 2 as well. I had a
-  hard time justifying why I had to aggravate readers and make them go through all this when the
-  fact is that they can learn either one and it would be just as useful. So, Python 2 it is.
+- 이 책은 2014년 3월 ~ 4월 사이에 마지막으로 변경되었으며,
+  http://swaroopch.com/2013/10/17/emacs-configuration-tutorial/[Emacs 24] 의
+  https://github.com/sensorflo/adoc-mode/wiki[adoc-mode] 를 이용하여
+  http://asciidoctor.org/docs/what-is-asciidoc/[Asciidoc] 으로 변환되었습니다.
+- 2008년에 이 책은 파이썬 3.0 에 대응하도록 변경되었습니다만 (당시 3.0 에 대응하는 몇 안되는 책 중
+  하나였습니다), 현재는 다시 파이썬 2에 대응하도록 변경되었습니다. 그 이유는 자신의
+  시스템에 기본으로 설치되어 있는 파이썬 2와 직접 설치하고 설정해야 하는 파이썬 3 사이에서
+  혼란을 겪는 독자들이 많았기 때문인데, 이는 새로 설치한 파이썬을 설정하는 과정을 설명한
+  여러 문서들이 파이썬 2를 기준으로 작성되어 있기 때문입니다. 그래서 나는 왜 이 짓을 해서
+  괜히 독자들을 괴롭히고 있는 것인가 하는 고민의 결과와 또 파이썬 2 나 3 중 하나만
+  잘 배워도 독자들에게 충분히 유용할 수 있다는 생각에 다시 파이썬 2를 선택하게 되었습니다.
 
-The book needs the help of its readers such as yourselves to point out any parts of the book which
-are not good, not comprehensible or are simply wrong. Please {contact}[write to the main author] or
-the respective <<translations,translators>> with your comments and suggestions.
+이 책은 여러분과 같은 독자들의 도움이 필요합니다. 책을 읽다가 설명이 좋지 않거나, 부족하거나 또는
+잘못된 부분이 있다면 지적해 주시기 바랍니다. 코멘트나 제안이 있으실 경우 {contact}[이 책의 저자] 나
+<<translations,역자>> 에게 연락해 주시기 바랍니다.
 
 === 공식 홈페이지
 
-The official website of the book is {homepage} where you can read the whole book online, download
-the latest versions of the book, {buy}[buy a printed hard copy] and also send me feedback.
+이 책의 공식 홈페이지는 {homepage} 이며 여기서 이 책을 온라인으로 읽으실 수 있고, 최신 버전의 책을
+내려받을 수 있으며 {buy}[책을 구매하거나] 피드백을 남길 수 있습니다.
 
 === 생각할 것들
 
