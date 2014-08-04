@@ -1,5 +1,5 @@
 [[revision_history]]
-== Appendix: Revision History
+== 부록: 리비전 기록
 
 * 3.0
   ** 31 Mar 2014
