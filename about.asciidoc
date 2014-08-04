@@ -44,4 +44,4 @@ http://asciidoctor.org/docs/what-is-asciidoc/[AsciiDoc format]으로 책을 재�
 
 === 저자에 대하여
 
-http://swaroopch.com/about/ 을 방문하세요.
+http://swaroopch.com/about/ 에 방문하세요.
