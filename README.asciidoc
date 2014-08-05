@@ -19,7 +19,7 @@ If you find any error or want to give some comments, please notify me via pjb768
 
 - Read HTML Version: http://byteofpython-korean.sourceforge.net/byte_of_python.html
 - Read PDF Version: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
- * Notice: The font used in PDF version of the book is http://www.kopus.org/[KOPUS] Dotum,
+ * Notice: The font used in PDF version of the book is http://www.kopus.org/[KOPUB] Dotum,
 modified to support several latin characters.
 
 == A Byte of Python
