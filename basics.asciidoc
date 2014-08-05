@@ -59,7 +59,7 @@ cp949란 마이크로소프트에서 제정한 한글 표현 방식을 뜻합니
 # -*- coding: utf-8 -*-
 ~~~
 
-자세한 사항은 http://www.python.org/dev/peps/pep-0263/[PEP 0263] 을
+자세한 사항은 http://www.python.org/dev/peps/pep-0263/[PEP 0263] 및 뒤에서 다룰 <<unicode,유니코드>> 섹션을
 참고하세요.
 
 === 리터럴 상수
