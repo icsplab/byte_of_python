@@ -8,7 +8,7 @@ Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩�
 - 이 책의 전자책/출력본을 판매하실 경우, 명백하고 눈에 잘 띄는 방법으로 이 책의 원 저자로부터 판매되는 것이 *아님을* 명시하지 않는 한
   이 책을 판매하실 수 *없습니다*.
 - 이러한 권리에 관련된 내용은 *반드시* 책의 도입부에 적혀 있어야 하며,
-  이 문서의 첫 페이지에는 {homepage} 로 연결되는 링크가 반드시 있어야 하고,
+  이 문서의 첫 페이지에는 http://swaroopch.com/notes/python 로 연결되는 링크가 반드시 있어야 하고,
   원 저자의 글을 이 곳에서 내려받을 수 있다는 사실을 명시해야 합니다.
 - 따로 명시되어 있지 않는 한, 이 책에서 사용된 모든 코드 및 스크립트는
   http://www.opensource.org/licenses/bsd-license.php[3-clause BSD License]
