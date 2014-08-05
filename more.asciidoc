@@ -208,7 +208,7 @@ include::programs/more_decorator.txt[]
 
 .동작 원리
 
-참고:
+다음을 참고하세요:
 
 -  http://www.ibm.com/developerworks/linux/library/l-cpdecor.html
 - http://toumorokoshi.github.io/dry-principles-through-python-decorators.html
@@ -216,7 +216,7 @@ include::programs/more_decorator.txt[]
 [[two_vs_three]]
 === 파이썬 2와 3의 차이점
 
-참고:
+다음을 참고하세요:
 
 - http://pythonhosted.org/six/["Six" 라이브러리]
 - http://lucumr.pocoo.org/2013/5/21/porting-to-python-3-redux/[Armin이 쓴 파이썬 3으로 포팅하기]
