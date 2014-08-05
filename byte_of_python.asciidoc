@@ -1,6 +1,5 @@
 = A Byte of Python
-:Author: Swaroop C H
-:Email: swaroop@swaroopch.com
+Swaroop_C_H <swaroop@swaroopch.com>; Translated_by_Jeongbin_Park <pjb7687@gmail.com>
 :Revision: 3.0
 :doctype: book
 :lang: ko
