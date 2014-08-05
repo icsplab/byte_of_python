@@ -23,7 +23,7 @@ http://docs.python.org/2/extending/[C 언어]를 이용하여 모듈을 작성�
 include::programs/module_using_sys.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/module_using_sys.txt[]
@@ -119,7 +119,7 @@ print "Square root of 16 is", sqrt(16)
 include::programs/module_using_name.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 --------------------------------------------------
 include::programs/module_using_name.txt[]
 --------------------------------------------------
@@ -156,7 +156,7 @@ include::programs/mymodule.py[]
 include::programs/mymodule_demo.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/mymodule_demo.txt[]

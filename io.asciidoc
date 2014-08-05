@@ -21,7 +21,7 @@
 include::programs/io_input.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/io_input.txt[]
@@ -69,7 +69,7 @@ http://grammar.ccc.commnet.edu/grammar/marks/marks.htm[여기에 있습니다]).
 include::programs/io_using_file.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/io_using_file.txt[]
@@ -113,7 +113,7 @@ include::programs/io_using_file.txt[]
 include::programs/io_pickle.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/io_pickle.txt[]

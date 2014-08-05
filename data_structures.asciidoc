@@ -47,7 +47,7 @@
 include::programs/ds_using_list.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/ds_using_list.txt[]
@@ -101,7 +101,7 @@ include::programs/ds_using_list.txt[]
 include::programs/ds_using_tuple.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/ds_using_tuple.txt[]
@@ -162,7 +162,7 @@ include::programs/ds_using_tuple.txt[]
 include::programs/ds_using_dict.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/ds_using_dict.txt[]
@@ -211,7 +211,7 @@ include::programs/ds_using_dict.txt[]
 include::programs/ds_seq.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/ds_seq.txt[]
@@ -318,7 +318,7 @@ _참조_ 가 할당됩니다. 참조란, 그 변수의 이름이 여러분의 �
 include::programs/ds_reference.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/ds_reference.txt[]
@@ -356,7 +356,7 @@ include::programs/ds_reference.txt[]
 include::programs/ds_str_methods.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/ds_str_methods.txt[]

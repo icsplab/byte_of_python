@@ -49,7 +49,7 @@ True
 include::programs/stdlib_logging.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/stdlib_logging.txt[]

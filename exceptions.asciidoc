@@ -55,7 +55,7 @@ EOFError
 include::programs/exceptions_handle.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/exceptions_handle.txt[]
@@ -95,7 +95,7 @@ include::programs/exceptions_handle.txt[]
 include::programs/exceptions_raise.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/exceptions_raise.txt[]
@@ -124,7 +124,7 @@ include::programs/exceptions_raise.txt[]
 include::programs/exceptions_finally.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/exceptions_finally.txt[]

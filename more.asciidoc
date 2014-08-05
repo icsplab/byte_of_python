@@ -98,7 +98,7 @@ Yes
 include::programs/more_lambda.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/more_lambda.txt[]
@@ -127,7 +127,7 @@ include::programs/more_lambda.txt[]
 include::programs/more_list_comprehension.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/more_list_comprehension.txt[]
@@ -200,7 +200,7 @@ AssertionError
 include::programs/more_decorator.py[]
 --------------------------------------------------
 
-출력 예시:
+실행 결과:
 
 --------------------------------------------------
 include::programs/more_decorator.txt[]
