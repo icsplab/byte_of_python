@@ -139,7 +139,7 @@ x 가 `True` 라면, `False` 를 반환합니다. x 가 `False` 라면, `True` �
 `x and y`를 계산할 경우, x 가 `False` 이면 `False`를 반환하며 `True` 이면 y 와의 and 연산값을 반환합니다.
 +
 `x = False; y = True; x and y`를 계산할 경우, x 가 `False` 이므로 y값에 관계없이 `x and y` 의 값은
-`False` 임이 자명하므로, x의 값이 `False`임이 확인되는 즉히 곧바로 결과값 `False` 가 반환되며 이때
+`False` 임이 자명하므로, x의 값이 `False`임이 확인되는 즉시 곧바로 결과값 `False` 가 반환되며 이때
 y의 값은 계산되지 않습니다. 이것을 단축 계산(short-circuit evalulation)이라고 부릅니다.
 
 `or` (불리언 OR 연산자) ::
