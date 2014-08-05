@@ -380,7 +380,7 @@ Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩�
 
 === 책을 읽으세요!
 
-{homepage} 에서 이 책을 온라인으로 읽으실 수 있습니다.
+{homepage} (영문) 또는 http://byteofpython-korean.sourceforge.net/byte_of_python.html (한글) 에서 이 책을 온라인으로 읽으실 수 있습니다.
 
 === 책 구입하기
 
@@ -389,10 +389,10 @@ Attribution-ShareAlike 4.0 International License] 허가서 아래에 배포됩�
 
 === 내려받기
 
-- http://files.swaroopch.com/python/byte_of_python.pdf[PDF] (데스크탑 컴퓨터)
-- http://files.swaroopch.com/python/byte_of_python.epub[EPUB] (아이폰/아이패드, 전자책 단말기 등)
-- http://files.swaroopch.com/python/byte_of_python.mobi[Mobi (아마존 킨들)]
-- https://github.com/swaroopch/byte_of_python[GitHub] (책 원문, 번역 등)
+- http://byteofpython-korean.sourceforge.net/byte_of_python.pdf[PDF(한글)], http://files.swaroopch.com/python/byte_of_python.pdf[PDF(영문)] - 데스크탑 컴퓨터
+- http://files.swaroopch.com/python/byte_of_python.epub[EPUB(영문)] - 아이폰/아이패드, 전자책 단말기 등
+- http://files.swaroopch.com/python/byte_of_python.mobi[Mobi(영문)] - 아마존 킨들
+- https://github.com/swaroopch/byte_of_python[GitHub] - 책 원문, 번역 등
 
 이 책의 지속적인 발전을 바라신다면, {buy} 에서 책을 구입하시는 것을 고려해 주세요.
 
