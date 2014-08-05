@@ -130,7 +130,7 @@ include::programs/exceptions_finally.py[]
 include::programs/exceptions_finally.txt[]
 --------------------------------------------------
 
-.작동 원리
+.동작 원리
 
 아주 평범한 파일을 읽는 코드를 작성하였지만, 파일에서 한 줄을 읽어올 때마다 `time.sleep` 함수를
 호출하여 2초씩 멈추게 하는 인위적인 코드를 집어넣어 프로그램이 천천히 실행되도록 해 주었습니다
