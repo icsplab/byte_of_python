@@ -8,6 +8,8 @@
 
 - HTML 버전 읽기: http://byteofpython-korean.sourceforge.net/byte_of_python.html
 - PDF 버전 읽기: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
+ * 참고: PDF 버전에 사용된 폰트는 http://www.kopus.org/[한국출판인회의]에서 공개한 `KOPUB 돋움` 을 수정하여 사용하였습니다.
+
 
 Original author of this book is Swaroop C H.
 The website of original book is http://swaroopch.com/notes/python/[http://swaroopch.com/notes/python/].
@@ -17,6 +19,8 @@ If you find any error or want to give some comments, please notify me via pjb768
 
 - Read HTML Version: http://byteofpython-korean.sourceforge.net/byte_of_python.html
 - Read PDF Version: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
+ * Notice: The font used in PDF version of the book is http://www.kopus.org/[KOPUS] Dotum,
+modified to support several latin characters.
 
 == A Byte of Python
 
