@@ -8,7 +8,9 @@
 
 - HTML 버전 읽기: http://byteofpython-korean.sourceforge.net/byte_of_python.html
 - PDF 버전 읽기: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
- * 참고: PDF 버전에 사용된 폰트는 http://www.kopus.org/[한국출판인회의]에서 공개한 `KOPUB 돋움` 을 수정하여 사용하였습니다.
+ * 참고: PDF 버전에 사용된 본문용 서체는 http://www.kopus.org/[한국출판인회의]에서 공개한
+   `KOPUB 돋움/바탕` 을 수정하여 사용하였으며, 고정폭 서체로는
+   `http://dev.naver.com/projects/nanumfont/[나눔고딕코딩]`을 사용하였습니다.
 
 
 Original author of this book is Swaroop C H.
@@ -19,8 +21,10 @@ If you find any error or want to give some comments, please notify me via pjb768
 
 - Read HTML Version: http://byteofpython-korean.sourceforge.net/byte_of_python.html
 - Read PDF Version: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
- * Notice: The font used in PDF version of the book is http://www.kopus.org/[KOPUB] Dotum,
-modified to support several latin characters.
+ * Notice: The (sans-)serif font used in PDF version of the book is `http://www.kopus.org/[KOPUB] Dotum/Batang`,
+   modified to support several latin characters. Also 
+   `http://dev.naver.com/projects/nanumfont/[Nanum Gothic Coding]` is used for monospace texts
+   (especially for Python codes).
 
 == A Byte of Python
 
