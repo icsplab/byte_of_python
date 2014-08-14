@@ -25,6 +25,7 @@ If you find any error or want to give some comments, please notify me via pjb768
    modified to support several latin characters. Also 
    +http://dev.naver.com/projects/nanumfont/[Nanum Gothic Coding Font]+ is used for monospace texts
    (especially for Python codes).
+   
 
 == A Byte of Python
 
