@@ -54,6 +54,8 @@ If you find any error or want to give some comments, please notify me via pjb768
 +$ . commands.bash+ 혹은 +$ source commands.bash+ 를 입력한 후,
 +$ make_html+ (HTML 제작) 혹은 +$ make_pdf+ (PDF 제작) 명령으로 원하는 출력물을 만듭니다.
 
+PDF 파일을 처음으로 제작하려고 할 경우 자동으로 +fopub+이 설치되므로 좀 시간이 걸릴 수 있습니다.
+
 == A Byte of Python
 
 "A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial
