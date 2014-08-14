@@ -4,7 +4,14 @@
 ## http://asciidoctor.org/docs/asciidoc-writers-guide/
 
 SLUG="byte_of_python"
-FOPUB="$HOME/code/asciidoctor/asciidoctor-fopub/fopub"
+FOPUB_PATH="$PWD/asciidoctor-fopub"
+FOPUB="$FOPUB_PATH/fopub"
+
+function get_fopub() {
+    git clone https://github.com/asciidoctor/asciidoctor-fopub
+    echo "Installing asciidoctor-fopub..."
+    "${FOPUB_PATH}/gradlew" -p "${FOPUB_PATH}" -q -u installApp
+}
 
 function doctor() {
     backend=$1
@@ -20,6 +27,12 @@ function make_html () {
 
 function make_pdf () {
     doctor docbook
+    if [ ! -e "$FOPUB" ]; then
+        get_fopub
+    fi
+    cp ${PWD}/fonts/fop-config.xml ${FOPUB_PATH}/build/fopub/docbook-xsl
+    cp ${PWD}/fonts/fo-pdf.xsl ${FOPUB_PATH}/build/fopub/docbook-xsl
+    sed -i "s|\[font_path\]|$PWD/fonts|" ${FOPUB_PATH}/build/fopub/docbook-xsl/fop-config.xml
     $FOPUB ${SLUG}.xml
     # OR
     # a2x -f pdf --fop ${SLUG}.asciidoc

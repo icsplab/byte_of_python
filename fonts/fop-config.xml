@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fop version="1.0">
+  <strict-configuration>true</strict-configuration>
+  <source-resolution>96</source-resolution>
+  <renderers>
+    <renderer mime="application/pdf">
+      <fonts>
+        <font kerning="yes" embed-url="[font_path]/KoPubBatangMedium-modified.ttf">
+          <font-triplet name="KoPubBatang" style="normal" weight="normal"/>
+        </font>
+	<font kerning="yes" embed-url="[font_path]/KoPubBatangMedium-modified-italic.ttf">
+          <font-triplet name="KoPubBatang" style="italic" weight="normal"/>
+        </font>
+	<font kerning="yes" embed-url="[font_path]/KoPubBatangBold.ttf">
+          <font-triplet name="KoPubBatang" style="normal" weight="bold"/>
+        </font>
+	<font kerning="yes" embed-url="[font_path]/KoPubDotumMedium-modified.ttf">
+          <font-triplet name="KoPubDotum" style="normal" weight="normal"/>
+        </font>
+	<font kerning="yes" embed-url="[font_path]/KoPubDotumMedium-modified-italic.ttf">
+          <font-triplet name="KoPubDotum" style="italic" weight="normal"/>
+        </font>
+	<font kerning="yes" embed-url="[font_path]/KoPubDotumBold.ttf">
+          <font-triplet name="KoPubDotum" style="normal" weight="bold"/>
+        </font>
+	<font kerning="no" embed-url="[font_path]/NanumGothicCoding.ttf">
+          <font-triplet name="NanumGothicCoding" style="normal" weight="normal"/>
+        </font>
+	<font kerning="no" embed-url="[font_path]/NanumGothicCodingBold.ttf">
+          <font-triplet name="NanumGothicCoding" style="normal" weight="bold"/>
+        </font>
+        <auto-detect />
+      </fonts>
+    </renderer>
+  </renderers>
+</fop>
