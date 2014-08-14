@@ -50,6 +50,7 @@ If you find any error or want to give some comments, please notify me via pjb768
  - +gem install asciidoctor+ 를 입력하여 설치합니다.
 
 이제 +git clone https://github.com/pjb7687/byte_of_python+ 하셔서 이 책의 저장소를 내려 받으세요.
+
 +$ . commands.bash+ 혹은 +$ source commands.bash+ 를 입력한 후,
 +$ make_html+ (HTML 제작) 혹은 +$ make_pdf+ (PDF 제작) 명령으로 원하는 출력물을 만듭니다.
 
