@@ -48,8 +48,10 @@ If you find any error or want to give some comments, please notify me via pjb768
  - JDK가 필요합니다. 적절한 패키지 혹은 Sun 공식 홈페이지에서 내려받아 설치하세요.
 5. Asciidoctor
  - +gem install asciidoctor+ 를 입력하여 설치합니다.
-
-이제 +git clone https://github.com/pjb7687/byte_of_python+ 하셔서 이 책의 저장소를 내려 받으세요.
+6. Git
+ - Git이 필요합니다. http://git-scm.com/downloads 을 참고하셔서 내려받아 설치하세요.
+ - 이제 +git clone https://github.com/pjb7687/byte_of_python+ 하셔서 이 책의 저장소를 내려 받으세요.
+ 이 때 주의할점은 상위 경로에 한글이 포함된 폴더가 있으면 안됩니다 (예: '바탕 화면'에 받으면 안됩니다).
 
 +$ . commands.bash+ 혹은 +$ source commands.bash+ 를 입력한 후,
 +$ make_html+ (HTML 제작) 혹은 +$ make_pdf+ (PDF 제작) 명령으로 원하는 출력물을 만듭니다.
