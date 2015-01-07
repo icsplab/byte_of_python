@@ -35,7 +35,7 @@ If you find any error or want to give some comments, please notify me via pjb768
 
 1. Ruby
  - 설치가 되어있지 않을 경우 +$ sudo apt-get install ruby+ 혹은 +$ sudo yum install ruby+ 로 설치하시기 바랍니다.
- - Ruby Development Package가 필요합니다. +$ sudo apt-get install rudy-dev+ 혹은 +$ sudo yum install ruby-devel+ 로
+ - Ruby Development Package가 필요합니다. +$ sudo apt-get install ruby-dev+ 혹은 +$ sudo yum install ruby-devel+ 로
  설치하시기 바랍니다.
 2. pygments
  - 파이썬의 pip 혹은 easy_install을 이용하여 pygments 패키지를 설치합니다.
