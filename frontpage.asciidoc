@@ -14,50 +14,63 @@
 [quote,'mailto:wmich50@theramp.net[Walt Michalik]']
 __________________________________________________
 This is the best beginner's tutorial I've ever seen! Thank you for your effort.
+(제가 본 최고의 튜토리얼입니다! 노고에 감사드립니다.)
 __________________________________________________
 
 [quote,'mailto:joshrob@poczta.onet.pl[Joshua Robin]']
 __________________________________________________
 The best thing i found was "A Byte of Python", which is simply a brilliant book for a
 beginner. It's well written, the concepts are well explained with self evident examples.
+(제가 찾은 최고의 책, "A Byte of Python"은 초보자를 위해 훌륭하게 쓰여진 책입니다.
+이 책은 정말 잘 쓰여졌고, 적절한 예제를 통해 파이썬의 각 기능이 잘 설명되어 있습니다.)
 __________________________________________________
 
 [quote,'https://twitter.com/ShanRajasekaran/status/268910645842423809[Shan Rajasekaran]']
 __________________________________________________
 Excellent gentle introduction to programming #Python for beginners
+(초보자를 위한 탁월하고 친절한 파이썬 프로그래밍 입문서)
 __________________________________________________
 
 [quote,'https://twitter.com/nickaigi/status/175508815729541120[Nickson Kaigi]']
 __________________________________________________
 Best newbie guide to python
+(파이썬 초보자를 위한 최고의 가이드)
 __________________________________________________
 
 [quote,'https://twitter.com/HerbertFeutl/status/11901471389913088[Herbert Feutl]']
 __________________________________________________
 start to love python with every single page read
+(매 페이지를 읽을 때마다 파이썬을 사랑하게 됨)
 __________________________________________________
 
 [quote,'https://twitter.com/Dili_mathilakam/status/220033783066411008[Dilip]']
 __________________________________________________
 perfect beginners guide for python, will give u key to unlock magical world of python
+(초보자를 위한 완벽한 파이썬 안내서, 당신을 마법의 파이썬 세계로 데려다줄 열쇠)
 __________________________________________________
 
 [quote,'https://twitter.com/BiologistJohn/statuses/194726001803132928[Biologist John]']
 __________________________________________________
 I should be doing my actual "work" but just found "A Byte of Python". A great guide with great
 examples.
+(사실 지금 "일"을 하고 있어야 하는데 딴짓하다가 "A byte of Python"을 찾았네요.
+여러 좋은 예제를 담은 훌륭한 책입니다.)
 __________________________________________________
 
 [quote,'https://twitter.com/mangeshnanoti/status/225680668867321857[Mangesh]']
 __________________________________________________
 Recently started reading a Byte of python. Awesome work. And that too for free. Highly recommended
 for aspiring pythonistas.
+(최근에 A byte of Python을 읽기 시작했습니다. 멋진 책입니다. 무료이고요. 좋은 파이썬 프로그래머를
+지향하시는 분에게 강력 추천합니다.)
 __________________________________________________
 
 [quote,'http://apas.gr/2010/04/27/learning-python/[Apostolos]']
 __________________________________________________
 A Byte of Python, written by Swaroop. (this is the book I'm currently reading). Probably the best
 to start with, and probably the best in the world for every newbie or even a more experienced user.
+(Swaroop님이 쓴 A Byte of Python 입니다. (이 책이 바로 제가 지금 읽는 책입니다). 아마
+처음 파이썬을 시작하기에, 파이썬을 처음 접하는 분들이나 심지어 경험 많은 프로그래머들에게도 최고의 책일 겁니다.)
 __________________________________________________
 
 [quote,'https://twitter.com/YuvrajPoudyal/status/448050415356346368[Yuvraj Sharma]']
