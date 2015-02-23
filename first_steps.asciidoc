@@ -95,7 +95,7 @@ http://www.gnu.org/software/emacs/[Emacs] 에 이미 익숙할 것입니다. 말
 [[pycharm]]
 === PyCharm
 
-https://www.jetbrains.com/pycharm-educational/[PyCharm Educational Edition]은 여러분이 파이펀으로
+https://www.jetbrains.com/pycharm-educational/[PyCharm Educational Edition]은 여러분이 파이썬으로
 프로그램을 작성할 때 사용할 수 있는 무료 편집기입니다.
 
 PyCharm을 처음 실행하면 아래와 같은 화면을 보게 될 것입니다. 그러면 +Create New Project+ 를 누르세요:
