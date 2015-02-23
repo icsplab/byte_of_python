@@ -82,8 +82,6 @@ to start with, and probably the best in the world for every newbie or even a mor
 처음 파이썬을 시작하기에, 파이썬을 처음 접하는 분들이나 심지어 경험 많은 프로그래머들에게도 최고의 책일 겁니다.)
 __________________________________________________
 
-이 아래부터의 서평들은 번역하지 않았습니다. 번역본을 계속 읽으시려면 다음 챕터까지 스크롤을 내려주세요!
-
 [quote,'https://twitter.com/YuvrajPoudyal/status/448050415356346368[Yuvraj Sharma]']
 __________________________________________________
 Enjoying Reading #ByteOfPython by @swaroopch best book ever
