@@ -326,7 +326,6 @@ boring. I want to understand the Orca screen reader code. Your book has hopefull
 for it.
 __________________________________________________
 
-
 [quote,'mailto:lisen2010@gmail.com[LEE]']
 __________________________________________________
 Hi, 'A byte of python' is really a good reading for python beginners. So, again, NICE WORK!
@@ -339,6 +338,18 @@ thx for your contribution.
 plz keep your enthusiasm to make this world better, this is just a little encourage from China.
 Your reader
 Lee
+__________________________________________________
+
+[quote,'mailto:chao926@gmail.com[Isen I-Chun Chao]']
+__________________________________________________
+I am Isen from Taiwan, who is a graduating PhD student in Electrical Engineering Department of
+National Taiwan University. I would like to thank you for your great book. I think it is not only
+just easy to read but also comprehensive and complete for a new comer of Python. The reason I read
+your book is that I am starting to work on the GNU Radio framework. Your book let me catch most of
+important core ideas and skill of Python with a minimum time.
+
+I also saw that you do not mind that readers send you a thank note in your book. So I really like
+your book and appreciate it. Thanks.
 __________________________________________________
 
 이 책은 NASA에서도 읽혀지고 있습니다!
