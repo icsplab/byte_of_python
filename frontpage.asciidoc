@@ -149,6 +149,20 @@ I love your book! It is the greatest Python tutorial ever, and a very useful ref
 a true masterpiece! Keep up the good work!
 __________________________________________________
 
+[quote,'https://github.com/swaroopch/byte_of_python/pull/13[myd7349]']
+__________________________________________________
+First of all, I want to say thanks to you for this greate book. I think it is a good book for those
+who are looking for a beginner's tutorial for Python.
+
+It is about two or there years ago, I think, when I first heard of this book. At that time, I am
+not able to read some book in English yet, so I got a chinese translation, which took me into the
+gate of Python programming.
+
+Recently, I reread this book. This time, of course, the english version. I couldn't believe that I
+can read the whole book without my dictionary at hand. Of course, it all dues to your effort to
+make this book an easy-to-understand one.
+__________________________________________________
+
 [quote,'mailto:m_gallivan12@hotmail.com[Matt Gallivan]']
 __________________________________________________
 I'm just e-mailing you to thank you for writing Byte of Python online.  I had been attempting
@@ -388,6 +402,9 @@ Laboratory)] 의 Deep Space Network 프로젝트에서 이용되고 있습니다
 - 'Introduction to Computer Science and Programming' at
   http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/references/['MIT
   OpenCourseWare']
+- 'Basic programming at the Faculty of Social Sciences, University of Ljubljana, Slovenia' -
+  mailto:ales.ziberna@fdv.uni-lj.si[Aleš Žiberna] says _"I (and my predecessor) have been using
+  your book as the main literature for this course"_
 
 === 권리 및 권한
 

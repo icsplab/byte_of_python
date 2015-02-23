@@ -1,8 +1,8 @@
-[[What Next]]
+[[what_next]]
 
 지금까지 이 책의 내용을 잘 따라오신 분들이라면 아마 많은 파이썬 프로그램을 작성해 보셨을 것이고,
-아마 파이썬에 대한 느낌도 좀 더 편안할 것이며 파이썬에 좀 더 친숙해 졌을 것입니다. 또 이 책의
-예제 프로그램 이외에도 이것저것 다른 것들도 시도해 보신 분들도 계시겠죠. 혹시 아니라면,
+아마 파이썬에 대한 느낌도 좀 더 편안해졌을 것이며, 또 파이썬에 좀 더 친숙해 졌을 것입니다. 또 이 책의
+예제 프로그램 이외에 이것저것 다른 것들도 시도해 보신 분들도 계시겠죠. 혹시 아니시라면,
 지금이라도 그렇게 하셔야 합니다. 자, 이제 남은 질문은 하나입니다. '앞으로 무엇을 해 보면 좋을까요?'
 
 아래 문제를 한번 해결해 보시기 바랍니다:
@@ -52,7 +52,7 @@ https://github.com/thekarangoel/Projects#numbers
   반드시 한번쯤 읽어 볼 필요가 있습니다.
 
 - http://pymotw.com/2/contents.html[금주의 파이썬 모듈] 도 또한 한번쯤 읽어 봐야 할,
-  또 다른 매우 잘 쓰여진 <<stdlib, 표준 라이브러리>> 가이드입니다.
+  또 다른 매우 잘 쓰여진 <<stdlib,표준 라이브러리>> 가이드입니다.
 
 === 참고 문서
 
@@ -199,6 +199,7 @@ PyPy는 파이썬으로 작성된 파이썬 구현입니다! 이것은 C, Java, 
 - http://docs.python.org/3/howto/functional.html[Functional Programming Howto by A.M. Kuchling]
 - http://www.diveintopython.net/functional_programming/index.html[Functional programming chapter in 'Dive Into Python' book]
 - http://ua.pycon.org/static/talks/kachayev/index.html[Functional Programming with Python presentation]
+- https://github.com/Suor/funcy[Funcy library]
 
 === 요약
 
