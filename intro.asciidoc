@@ -63,7 +63,7 @@ PocketPC(포켓 PC) 상에서 동작합니다.
 혹은 http://kivy.org[Kivy] 와 같은 플랫폼을 활용하면,
 여러분의 컴퓨터 _및_ iPhone, iPad, Android상에서 동작하는 게임을 제작할 수도 있습니다.
 
-[[인터프리터 언어]]
+[[interpreted]]
 인터프리터 언어 ::
 이 부분은 설명이 조금 필요합니다.
 +
