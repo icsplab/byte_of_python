@@ -1,7 +1,8 @@
 # Summary
 
+* [Introduction](README.md)
 * [Dedication](dedication.md)
-* [Preface](preface.md)
+* [서문](preface.md)
 * [About Python](about_python.md)
 * [Installation](installation.md)
 * [First Steps](first_steps.md)
@@ -24,3 +25,4 @@
 * [Appendix: Translations](translations.md)
 * [Appendix: Translation How-to](translation_howto.md)
 * [Feedback](feedback.md)
+
