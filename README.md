@@ -15,8 +15,10 @@
 Original author of this book is Swaroop C H.
 The website of original book is [http://swaroopch.com/notes/python/](http://swaroopch.com/notes/python/).
 
-Jeongbin Park translated the book in Korean.
-If you find any error or want to give some comments, please notify me via pjb7687@gmail.com.
+Jeongbin Park translated the earlier version of this book in Korean.
+Jeongbin Park and Jaedong Kim is currently updating the contents for Python 3.
+
+If you find any error or want to give some comments, please notify via pjb7687@gmail.com.
 
 - Read HTML Version: http://byteofpython-korean.sourceforge.net/byte_of_python.html
 - Read PDF Version: http://byteofpython-korean.sourceforge.net/byte_of_python.pdf
