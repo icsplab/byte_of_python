@@ -1,4 +1,4 @@
-$ python io_using_file.py
+$ python3 io_using_file.py
 Programming is fun
 When the work is done
 if you wanna make your work also fun:

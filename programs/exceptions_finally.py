@@ -9,16 +9,16 @@ try:
         line = f.readline()
         if len(line) == 0:
             break
-        print line,
+        print(line, end='')
         sys.stdout.flush()
-        print "Press ctrl+c now"
+        print("Press ctrl+c now")
         # To make sure it runs for a while
         time.sleep(2)
 except IOError:
-    print "Could not find file poem.txt"
+    print("Could not find file poem.txt")
 except KeyboardInterrupt:
-    print "!! You cancelled the reading from the file."
+    print("!! You cancelled the reading from the file.")
 finally:
     if f:
         f.close()
-    print "(Cleaning up: Closed the file)"
+    print("(Cleaning up: Closed the file)")

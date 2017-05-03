@@ -29,8 +29,8 @@ counter = 0
 
 @retry
 def save_to_database(arg):
-    print "Write to a database or make a network call or etc."
-    print "This will be automatically retried if exception is thrown."
+    print("Write to a database or make a network call or etc.")
+    print("This will be automatically retried if exception is thrown.")
     global counter
     counter += 1
     # This will throw an exception in the first call
