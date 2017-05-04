@@ -1,92 +1,90 @@
-# About Python
+# 파이썬은
 
-Python is one of those rare languages which can claim to be both _simple_ and _powerful_.  You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution to the problem rather than the syntax and structure of the language you are programming in.
+파이썬은 \_간단\_하면서도 \_강력\_한 언어 중 하나입니다. 파이썬은 언어의 문법과 구조에 별로 신경을 쓰지 않아도 문제를 푸는 것 자체에 집중할 수 있기 때문에 매우 놀랍습니다.
 
-The official introduction to Python is:
+다음은 파이썬의 공식 소개글입니다.
 
-> Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python's elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+> 파이썬은 배우기 쉽고 강력한 프로그래밍 언어입니다. 파이썬은 효율적인 고수준 데이터 구조를 갖추고 있고 간단하지만 효과적인 객체 지향 프로그래밍 접근법 또한 갖추고 있습니다. 우아한 문법과 동적 타이핑, 인터프리팅 환경을 갖춘 파이썬은 다양한 분야와 다양한 플랫폼에서 사용될 수 있는 최적의 스크립팅, RAD(rapid application development) 언어입니다.
 
-I will discuss most of these features in more detail in the next section.
+다음 섹션에서 이러한 파이썬의 특징에 대해 상세히 알아보겠습니다.
 
-## Story behind the name
+## 파이썬이라는 이름의 유래
 
-Guido van Rossum, the creator of the Python language, named the language after the BBC show "Monty
-Python's Flying Circus". He doesn't particularly like snakes that kill animals for food by winding
-their long bodies around them and crushing them.
+파이썬의 창시자 귀도 반 로섬(Guido van Rossum)이 BBC에서 방영되던 "Monty Python’s Flying Circus"라는 TV 프로그램의 이름을 따서 지었습니다. 사실 귀도는 뱀이라는 긴 몸으로 다른 동물의 몸을 휘감아 으깨어 부수고 먹어치우는 동물을 딱히 좋아하지는 않는다고 합니다.
 
-## Features of Python
+## 파이썬의 특징
 
-### Simple
+### 단순함
 
-Python is a simple and minimalistic language. Reading a good Python program feels almost like reading English, although very strict English! This pseudo-code nature of Python is one of its greatest strengths. It allows you to concentrate on the solution to the problem rather than the language itself.
+파이썬은 단순하고 최소화된 언어입니다. 잘 쓰여진 파이썬 프로그램을 읽는 것은 좀 딱딱하게 쓰여진 영어 문장을 읽는 것과 크게 다르지 않습니다! 이러한 프로그램 코드 같지 않아 보이는 특성은 파이썬의 가장 강력한 특징 중 하나입니다. 이로 인해 파이썬이라는 언어 자체보다 여러분이 풀고자 하는 문제에 더 쉽게 집중할 수 있습니다.
 
-### Easy to Learn
+### 배우기 쉬운 언어
 
-As you will see, Python is extremely easy to get started with. Python has an extraordinarily simple syntax, as already mentioned.
+곧 알게 되시겠지만 파이썬은 정말 배우기 쉬운 언어입니다. 이미 말씀드린 것처럼 파이썬은 굉장히 쉬운 문법 체계를 갖고 있습니다.
 
-### Free and Open Source
+### 자유, 오픈 소스 소프트웨어
 
-Python is an example of a _FLOSS_ (Free/Libré and Open Source Software). In simple terms, you can freely distribute copies of this software, read its source code, make changes to it, and use pieces of it in new free programs. FLOSS is based on the concept of a community which shares knowledge. This is one of the reasons why Python is so good - it has been created and is constantly improved by a community who just want to see a better Python.
+파이썬은 FLOSS (Free/Libré and Open Source Software - 자유, 오픈 소스 소프트웨어)의 좋은 예입니다. 이것은 이 소프트웨어의 복사본을 마음대로 배포할 수 있고 소스 코드가 공개되어 있어 언제든지 읽을 수 있으며, 필요한 부분을 고칠 수 있고 새로운 자유 소프트웨어를 작성할 때 이 프로그램의 일부를 사용해도 된다는 것을 의미합니다. FLOSS는 지식을 공유하는 공동체를 기반으로 하고 있습니다. 이러한 특징 때문에 파이썬은 굉장히 좋은 프로그래밍 언어라고 할 수 있습니다. 그리고 더 좋은 파이썬을 만들고자 하는 많은 사람들이 지속적으로 파이썬을 개선하고 있습니다.
 
-### High-level Language
+### 고수준 언어
 
-When you write programs in Python, you never need to bother about the low-level details such as managing the memory used by your program, etc.
+파이썬으로 프로그래밍을 할 때에는 메모리를 관리하는 것과 같은 저수준의 세부적인 사항들을 전혀 신경쓰지 않아도 됩니다.
 
-### Portable
+### 이식성(Portable)
 
-Due to its open-source nature, Python has been ported to (i.e. changed to make it work on) many platforms. All your Python programs can work on any of these platforms without requiring any changes at all if you are careful enough to avoid any system-dependent features.
+파이썬은 오픈 소스이기 때문에 다양한 플랫폼을 지원합니다. 때문에 특정 플랫폼에서만 사용되는 기능들을 사용하지 않는다면 특별히 프로그램을 수정하지 않더라도 다양한 플랫폼에서 실행할 수 있습니다.
 
-You can use Python on GNU/Linux, Windows, FreeBSD, Macintosh, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE and PocketPC!
+파이썬은 리눅스, Windows, FreeBSD, MacOS, Solaris, OS/2, Amiga, AROS, AS/400, BeOS, OS/390, z/OS, Palm OS, QNX, VMS, Psion, Acorn RISC OS, VxWorks, PlayStation, Sharp Zaurus, Windows CE, PocketPC과 같은 플랫폼에서 사용할 수 있습니다.
 
-You can even use a platform like [Kivy](http://kivy.org) to create games for your computer _and_ for iPhone, iPad, and Android.
+혹은 [Kivy](http://kivy.org) 와 같은 플랫폼을 활용하면 컴퓨터와 iPhone, iPad, Android상에서 동작하는 게임을 제작할 수도 있습니다.
 
-### Interpreted
+### 인터프리터 언어
 
-This requires a bit of explanation.
+이 부분은 설명이 조금 필요합니다.
 
-A program written in a compiled language like C or C\++ is converted from the source language i.e. C or C++ into a language that is spoken by your computer (binary code i.e. 0s and 1s) using a compiler with various flags and options. When you run the program, the linker/loader software copies the program from hard disk to memory and starts running it.
+C언어나 C++과 같은 컴파일 언어는 여러 옵션과 플래그를 사용해 소스 코드를 컴퓨터가 이해하는 언어(0과 1로 구성된 바이너리 코드)로 번역하는 과정을 거칩니다. 이렇게 컴파일 된 프로그램을 실행하면 링커(linker)나 로더(loader)라는 소프트웨어가 프로그램을 하드 디스크에서 읽은 후 메모리로 불러와 프로그램을 실행하게 됩니다.
 
-Python, on the other hand, does not need compilation to binary. You just _run_ the program directly from the source code. Internally, Python converts the source code into an intermediate form called bytecodes and then translates this into the native language of your computer and then runs it. All this, actually, makes using Python much easier since you don't have to worry about compiling the program, making sure that the proper libraries are linked and loaded, etc. This also makes your Python programs much more portable, since you can just copy your Python program onto another computer and it just works!
+반면에 파이썬은 이렇게 컴파일을 할 필요가 없습니다. 파이썬은 소스 코드를 곧바로 \_실행\_합니다. 이때 파이썬은 소스 코드를 '바이트코드’라는 중간 단계의 형태로 변환하고 이것을 다시 여러분의 컴퓨터가 사용하는 언어로 변환한 후 실행합니다. 사실 이러한 특징 때문에 여러분은 컴파일이라는 과정을 신경쓰지 않고서도, 즉 여러분이 필요한 라이브러리를 갖고 있는지 링크가 잘 되었는지 잘 로드 되었는지 등을 신경쓰지 않고서도 파이썬을 쉽게 사용할 수 있습니다. 또한 여러분이 작성한 파이썬 프로그램을 복사하기만 하면 다른 컴퓨터에서도 곧바로 실행할 수 있기 때문에 이식성이 뛰어납니다.
 
-### Object Oriented
+### 객체 지향 언어
 
-Python supports procedure-oriented programming as well as object-oriented programming. In _procedure-oriented_ languages, the program is built around procedures or functions which are nothing but reusable pieces of programs. In _object-oriented_ languages, the program is built around objects which combine data and functionality. Python has a very powerful but simplistic way of doing OOP, especially when compared to big languages like C++ or Java.
+파이썬은 절차 지향 프로그래밍과 객체 지향 프로그래밍을 모두 지원합니다. 절차 지향 언어에서 프로그램은 일련의 프로시저(procedures)나 함수(functions)들로 구성되는데 이것들은 단순히 프로그램에서 많이 재사용되는 코드 조각들을 의미합니다. 반면 객체 지향 언어에서 프로그램은 객체(Object)로 구성되어 있는데 객체란 데이터와 기능이 결합된 하나의 대상을 의미합니다. 파이썬은 특히 C++이나 Java와 같은 언어들에 비해 매우 강력하고도 쉬운 방법으로 객체 지향을 지원합니다.
 
-### Extensible
+### 확장성
 
-If you need a critical piece of code to run very fast or want to have some piece of algorithm not to be open, you can code that part of your program in C or C\++ and then use it from your Python program.
+만약 여러분이 빠르게 동작하는 프로그램을 만들고 싶거나 프로그램의 일부 알고리즘을 공개하고 싶지 않다면 코드의 일부분을 C 혹은 C++로 작성한 후 파이썬 프로그램에서 읽어들여 사용하도록 할 수 있습니다.
 
-### Embeddable
+### 포함성(embeddable)
 
-You can embed Python within your C/C\++ programs to give _scripting_ capabilities for your program's users.
+여러분의 C/C++ 프로그램에 파이썬을 포함하도록 하여 여러분의 프로그램을 사용하는 사용자들이 '스크립팅' 기능을 사용하도록 할 수 있습니다.
 
-### Extensive Libraries
+### 방대한 라이브러리
 
-The Python Standard Library is huge indeed. It can help you do various things involving regular expressions,documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff. Remember, all this is always available wherever Python is installed. This is called the _Batteries Included_ philosophy of Python.
+파이썬은 방대한 표준 라이브러리를 갖추고 있습니다. 여기에는 정규 표현식, 자동 문서 생성, 유닛 테스트, 쓰레딩, 데이터베이스, 웹 브라우저, CGI, FTP, 전자메일, XML, XML-RPC, HTML, WAV 파일, 암호화 알고리즘, GUI (graphical user interfaces) 등등이 들어 있으며, 여러 시스템 관련 기능들 또한 포함되어 있습니다. 이러한 기능들은 파이썬이 설치되어 있는 어떤 시스템에서든지 사용 가능하다는 점을 기억하세요.
 
-Besides the standard library, there are various other high-quality libraries which you can find at the [Python Package Index](http://pypi.python.org/pypi).
+이러한 표준 라이브러리 외에도, [파이썬 패키지 인덱스(Python Package Index)](http://pypi.python.org/pypi) 에 다양한 라이브러리가 공개되어 있습니다.
 
-### Summary
+### 요약
 
-Python is indeed an exciting and powerful language. It has the right combination of performance and features that make writing programs in Python both fun and easy.
+파이썬은 정말 흥미진진하고 강력한 언어입니다. 파이썬의 빠른 성능과 여러 기능들의 조화는 여러분이 재미있고 쉽게 파이썬으로 프로그램을 작성할 수 있도록 해 줍니다.
 
-## Python 3 versus 2
+## 파이썬 3 vs 파이썬 2
 
-You can ignore this section if you're not interested in the difference between "Python version 2" and "Python version 3". But please do be aware of which version you are using. This book is written for Python version 3.
+만약 여러분이 파이썬 2와 3의 차이에 대해 큰 관심이 없으시다면 이 섹션을 넘어가도 괜찮습니다. 그렇지만 여러분이 어떤 버전의 파이썬을 사용하고 있는지는 알고 계시는 것이 좋습니다. 이 책에서는 파이썬 3을 사용합니다.
 
-Remember that once you have properly understood and learn to use one version, you can easily learn the differences and use the other one. The hard part is learning programming and understanding the basics of Python language itself. That is our goal in this book, and once you have achieved that goal, you can easily use Python 2 or Python 3 depending on your situation.
+일단 여러분이 어느 한 버전을 잘 이해하고 사용하는 방법을 익히고 나면 두 버전의 차이점에 대해 쉽게 배울 수 있고 다른 버전 또한 쉽게 사용할 수 있습니다. 프로그래밍을 배우고 파이썬 언어의 기본을 이해하는 것 그 자체가 어려운 부분입니다. 이것이 바로 이 책의 목표이며 일단 목표를 달성하고 나면 상황에 따라 파이썬 2나 3 모두 쉽게 사용할 수 있게 될 것입니다.
 
-For details on differences between Python 2 and Python 3, see:
+파이썬 2와 파이썬 3의 차이점에 대해 자세하게 알고 싶으시다면 다음을 참조하세요.
 
-- [The future of Python 2](http://lwn.net/Articles/547191/)
-- [Porting Python 2 Code to Python 3](https://docs.python.org/3/howto/pyporting.html)
-- [Writing code that runs under both Python2 and 3](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
-- [Supporting Python 3: An in-depth guide](http://python3porting.com)
+- [파이썬 2의 미래(영문)](http://lwn.net/Articles/547191/)
+- [파이썬 2에서 파이썬 3으로 변환하기(영문)](https://docs.python.org/3/howto/pyporting.html)
+- [파이썬 2와 3에서 작동하는 코드 작성하기(영문)](https://wiki.python.org/moin/PortingToPy3k/BilingualQuickRef)
+- [파이썬 3 심층 가이드(영문)](http://python3porting.com)
 
-## What Programmers Say
+## 프로그래머들이 말하는 파이썬
 
-You may find it interesting to read what great hackers like ESR have to say about Python:
+ESR(Eric S. Raymond)과 같은 위대한 해커들이 파이썬을 뭐라고 표현했는지 확인해 보세요.
 
-- _Eric S. Raymond_ is the author of "The Cathedral and the Bazaar" and is also the person who coined the term _Open Source_. He says that [Python has become his favorite programming language](http://www.python.org/about/success/esr/). This article was the real inspiration for my first brush with Python.
-- _Bruce Eckel_ is the author of the famous 'Thinking in Java' and 'Thinking in C++' books. He says that no language has made him more productive than Python. He says that Python is perhaps the only language that focuses on making things easier for the programmer. Read the [complete interview](http://www.artima.com/intv/aboutme.html) for more details.
-- _Peter Norvig_ is a well-known Lisp author and Director of Search Quality at Google (thanks to Guido van Rossum for pointing that out). He says that [writing Python is like writing in pseudocode](https://news.ycombinator.com/item?id=1803815). He says that Python has always been an integral part of Google. You can actually verify this statement by looking at the [Google Jobs](http://www.google.com/jobs/index.html) page which lists Python knowledge as a requirement for software engineers.
+- Eric S. Raymond 는 "성당과 시장(The Cathedral and the Bazaar)" 의 저자이며, 또한 오픈 소스(Open Source) 라는 단어의 창시자입니다. 그는 [어떻게 파이썬이 자신이 가장 좋아하는 언어가 되었는지에 대한 글(영문)](http://www.python.org/about/success/esr/)을 남겼습니다. 또 이 글은 제가 파이썬을 처음 시작하게 된 계기가 된 글이기도 합니다.
+- Bruce Eckel 은 유명한 책 'Thinking in Java' 와 'Thinking in C++' 의 저자입니다. 그는 파이썬이 아닌 다른 어떤 언어도 그가 파이썬을 사용할 때만큼 생산적이도록 하지 못했다고 말합니다. 또 그는 프로그래머에게 있어서 문제를 쉽게 해결하는 데 초점을 맞추는 언어는 아마도 파이썬이 유일하지 않을까 라는 말도 남겼습니다. 좀 더 자세한 사항은 [인터뷰 전문(영문)](http://www.artima.com/intv/aboutme.html)을 읽어 보세요.
+- Peter Norvig 은 유명한 Lisp 프로그래머이며 또 구글의 '검색 품질 책임자' 로 일하고 있습니다 (이것을 지적해준 귀도 반 로섬에게 감사드립니다). 그는 [파이썬으로 프로그래밍 하는 것은 마치 의사코드로 프로그램하는 것 같다(영문)](https://news.ycombinator.com/item?id=1803815)고 말합니다. 그는 또한 파이썬은 언제나 구글의 가장 중요한 부분을 담당하고 있다는 사실도 밝혀 주었습니다. 이에 대해서는 여러분이 직접 구글 채용(Google Jobs) 페이지에 방문해 보시면 소프트웨어 엔지니어로 채용되는 조건에 파이썬에 대한 지식이 필수 사항으로 되어 있는 것을 확인해보실 수 있습니다.
