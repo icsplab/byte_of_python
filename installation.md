@@ -56,10 +56,6 @@ NOTE: 프로그래밍에 대해 이미 잘 알고 있고 Docker에 익숙하다�
 
 ## MacOS에서 설치하기
 
-For Mac OS X users, use [Homebrew](http://brew.sh): `brew install python3`.
-
-To verify, open the terminal by pressing `[Command + Space]` keys (to open Spotlight search), type `Terminal` and press `[enter]` key. Now, run `python3` and ensure there are no errors.
-
 MacOS 사용자는 [Homebrew](http://brew.sh)를 통해 설치합니다.
 
 `brew install python3`.
