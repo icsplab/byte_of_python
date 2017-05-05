@@ -21,31 +21,30 @@ https://www.python.org/downloads/ 에 접속해서 최신 버전의 설치 프�
 NOTE: 프로그래밍에 대해 이미 잘 알고 있고 Docker에 익숙하다면 [Python in Docker(영문)](https://hub.docker.com/_/python/)와 [Docker on Windows(영문)](https://docs.docker.com/windows/)를 확인해 보세요.
 
 
-### DOS Prompt {#dos-prompt}
+### 명령 프롬프트
 
-If you want to be able to use Python from the Windows command line i.e. the DOS prompt, then you need to set the PATH variable appropriately.
+만약 파이썬을 명령 프롬프트 같은 윈도우 커맨드 라인툴에서 사용하고 싶다면 PATH 환경 변수를 알맞게 설정해야 합니다.
 
-For Windows 2000, XP, 2003 , click on `Control Panel` -> `System` -> `Advanced` -> `Environment Variables`. Click on the variable named `PATH` in the _System Variables_ section, then select `Edit` and add `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate directory name.
+윈도우 2000, XP, 2003의 경우, `제어판` → `시스템` → `고급` → `환경 변수`로 들어가세요. 이제 \_시스템 변수\_ 목록에 있는 `PATH`를 선택한 뒤, `편집` 버튼을 누르고 `C:\Python36` (이 폴더가 실제로 존재하는지 다시 한번 확인하세요. 더 최신 버전의 파이썬을 설치한 경우 폴더 이름이 다를 수 있습니다)이라는 문자열을 이미 있던 문자열의 맨 뒤에 추가하세요. 당연한 이야기지만 올바른 경로를 입력해야 합니다.
 
-<!-- The directory should match pythonVersion variable in book.json -->
-For older versions of Windows, open the file `C:\AUTOEXEC.BAT` and add the line `PATH=%PATH%;C:\Python35` and restart the system. For Windows NT, use the `AUTOEXEC.NT` file.
+그 이전 버전의 윈도우를 사용하시는 분들은 `C:\AUTOEXEC.BAT`를 열고 맨 뒷줄에 `PATH=%PATH%;C:\Python36`이라고 마지막에 한 줄 추가한 뒤 시스템을 재시작하세요. 윈도우 NT의 경우 `AUTOEXEC.NT` 파일을 편집하세요.
 
-For Windows Vista:
+윈도우 비스타
 
-- Click Start and choose `Control Panel`
-- Click System, on the right you'll see "View basic information about your computer"
-- On the left is a list of tasks, the last of which is `Advanced system settings`. Click that.
-- The `Advanced` tab of the `System Properties` dialog box is shown. Click the `Environment Variables` button on the bottom right.
-- In the lower box titled `System Variables` scroll down to Path and click the `Edit` button.
-- Change your path as need be.
-- Restart your system. Vista didn't pick up the system path environment variable change until I restarted.
+- 시작 메뉴를 누르고 `제어판`을 클릭하세요.
+- `시스템`을 클릭하면 오른쪽에 `컴퓨터에 대한 기본 정보 보기` 창이 보일 것입니다.
+- 왼쪽에는 작업 항목 아래 여러 메뉴들이 있는데 이 중 `고급 시스템 설정`을 누릅니다.
+- 그러면 `시스템 속성 대화상자`의 `고급` 탭이 보이게 됩니다. 오른쪽 아래에 있는 `환경 변수` 버튼을 클릭하세요.
+- 아래쪽의 `시스템 변수`라고 적혀 있는 목록에 있는 PATH항목을 선택하고 `편집` 버튼을 클릭하세요.
+- 경로를 수정하세요.
+- 시스템을 재시작하세요. 윈도우 비스타는 컴퓨터가 재시작되기 전까지 새로 지정한 환경 변수가 적용되지 않습니다.
 
-For Windows 7 and 8:
+윈도우 7과 윈도우 8
 
-- Right click on Computer from your desktop and select `Properties` or click `Start` and choose `Control Panel` -> `System and Security` -> `System`. Click on `Advanced system settings` on the left and then click on the `Advanced` tab. At the bottom click on `Environment Variables` and under `System variables`, look for the `PATH` variable, select and then press `Edit`.
-- Go to the end of the line under Variable value and append `;C:\Python35` (please verify that this folder exists, it will be different for newer versions of Python) to the end of what is already there. Of course, use the appropriate folder name.
-- If the value was `%SystemRoot%\system32;` It will now become `%SystemRoot%\system32;C:\Python36` <!-- The directory should match pythonVersion variable in book.json -->
-- Click `OK` and you are done. No restart is required, however you may have to close and reopen the command line.
+- 바탕 화면에 있는 컴퓨터 아이콘에서 마우스 오른쪽 클릭하고 `속성`을 누르거나 `시작` 메뉴를 클릭하고 `제어판`을 선택한 뒤 `시스템 및 보안`의 `시스템`을 클릭하세요. 화면 왼쪽에 보이는 `고급 시스템 설정` 항목을 클릭한 뒤 `고급` 탭을 클릭하세요. 아래쪽에 보이는 `시스템 변수` 밑에 있는 여러 변수들 중 `PATH`라는 변수를 찾아 선택한 뒤, `편집` 버튼을 누르세요.
+- 이미 있던 문자열의 맨 끝에 `C:\Python36`을 추가하세요(이 폴더가 실제로 존재하는지 다시 한번 확인하세요. 더 최신 버전의 파이썬을 설치한 경우 폴더 이름이 다를 수 있습니다).
+- 만약 원래 있던 문자열이 `%SystemRoot%\system32;`였다고 한다면 변경된 문자열은 `%SystemRoot%\system32;C:\Python36`이어야 합니다.
+- `확인` 버튼을 누르면 시스템을 재시작하지 않아도 변경 사항이 곧바로 적용됩니다만, 현재 실행중인 명령 프롬프트는 종료 후 다시 시작해주어야 합니다.
 
 ### Running Python prompt on Windows
 
