@@ -1,19 +1,20 @@
-# Installation {#installation}
+# 설치
 
-When we refer to "Python 3" in this book, we will be referring to any version of Python equal to or greater than version [Python {{ book.pythonVersion }}](https://www.python.org/downloads/).
+이 책에서 "파이썬 3"이라고 하는 것은 [Python 3.6.0](https://www.python.org/downloads/) 이상 버전을 뜻합니다.
 
-## Installation on Windows
+## 윈도우에서 설치하기
 
-Visit https://www.python.org/downloads/ and download the latest version. At the time of this writing, it was Python 3.5.1 
-The installation is just like any other Windows-based software.
+https://www.python.org/downloads/ 에 접속해서 최신 버전의 설치 프로그램을 내려받아 설치하세요. 이 글이 번역되는 2017년 5월 현재 최신 버전은 Python 3.6.1 입니다. 설치 방법은 일반적인 윈도우 기반 소프트웨어를 설치 하는 것과 같습니다.
 
-Note that if your Windows version is pre-Vista, you should [download Python 3.4 only](https://www.python.org/downloads/windows/) as later versions require newer versions of Windows.
+만약 Windows Vista 이전 버전(Windows XP 등 - 역자 주)를 사용한다면 [Python 3.4](https://www.python.org/downloads/windows/) 이하를 설치해야 합니다. 
 
-CAUTION: Make sure you check option `Add Python 3.5 to PATH`.
+주의: 설치할 때 `Add Python 3.6 to Path`에 반드시 체크를 해야 합니다.
 
 To change install location, click on `Customize installation`, then `Next` and enter `C:\python35` as install location.
 
-If not checked, check `Add Python to environment variables`. This does the same thing as `Add Python 3.5 to PATH` on the first install screen.
+설치 위치를 변경하기 위해서 `Customize installation`를 선택하고 `Next` 버튼을 누른 후 `Customize install location`에 `C:\python36`을 입력합니다.
+
+만약 `Add Python to environment variables`에 체크가 되어 있지 않다면 체크합니다. 이 옵션은 처음 설치 화면에 나왔던 `Add Python 3.6 to PATH`과 같은 것입니다.
 
 You can choose to install Launcher for all users or not, it does not matter much. Launcher is used to switch between different versions of Python installed.
 
