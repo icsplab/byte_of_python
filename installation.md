@@ -54,29 +54,37 @@ NOTE: 프로그래밍에 대해 이미 잘 알고 있고 Docker에 익숙하다�
 
 이제 `python`을 입력하고 파이썬 프롬프트가 잘 실행되는지 확인하세요.
 
-## Installation on Mac OS X
+## MacOS에서 설치하기
 
 For Mac OS X users, use [Homebrew](http://brew.sh): `brew install python3`.
 
 To verify, open the terminal by pressing `[Command + Space]` keys (to open Spotlight search), type `Terminal` and press `[enter]` key. Now, run `python3` and ensure there are no errors.
 
-## Installation on GNU/Linux
+MacOS 사용자는 [Homebrew](http://brew.sh)를 통해 설치합니다.
 
-For GNU/Linux users, use your distribution's package manager to install Python 3, e.g. on Debian & Ubuntu: `sudo apt-get update && sudo apt-get install python3`.
+`brew install python3`.
 
-To verify, open the terminal by opening the `Terminal` application or by pressing `Alt + F2` and entering `gnome-terminal`. If that doesn't work, please refer the documentation of your particular GNU/Linux distribution. Now, run `python3` and ensure there are no errors.
+MacOS Sierra에 기본으로 설치되어 있는 파이썬은 2.7 입니다.(역자 주)
 
-You can see the version of Python on the screen by running:
 
-<!-- The output should match pythonVersion variable in book.json -->
+## GNU/Linux에서 설치하기
+
+GNU/Linux 사용자의 경우 사용하는 배포판의 패키지 매니저를 이용해 파이썬 3을 설치하시기 바랍니다. 예를 들어 데비안(Debian)과 우분투(Ubuntu)의 경우 다음의 명령어를 통해 설치할 수 있습니다.
+
+`sudo apt-get update && sudo apt-get install python3`
+
+제대로 설치가 되었는지 확인하려면 터미널 프로그램을 열거나 혹은 Alt+F2 키를 입력한 뒤 `gnome-terminal`을 입력하여 터미널을 실행하세요. 만약 이 두 방법으로 터미널을 실행시킬 수 없으면 여러분이 설치한 리눅스 배포판의 설명서를 참조하세요. 이제 `python3`을 입력하고 문제없이 실행이 되는지 확인하세요.
+
+다음과 같이 입력하면 시스템에 설치된 파이썬의 버전을 확인할 수 있습니다.
+
 ```
 $ python3 -V
 Python 3.6.0
 ```
 
-NOTE: `$` is the prompt of the shell. It will be different for you depending on the settings of the operating system on your computer, hence I will indicate the prompt by just the `$` symbol.
+NOTE: `$`는 쉘의 프롬프트를 의미합니다. 이것은 여러분의 컴퓨터에 설치된 운영 체제의 설정에 따라 바뀔 수 있지만 이 책에서는 `$`로 통칭하도록 하겠습니다.
 
-CAUTION: Output may be different on your computer, depending on the version of Python software installed on your computer.
+주의: 컴퓨터에 설치된 파이썬 버전에 따라 결과가 조금씩 다를 수 있습니다.
 
 ## Summary
 
