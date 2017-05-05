@@ -1,4 +1,4 @@
-# 설치
+# 설치{#installation}
 
 이 책에서 "파이썬 3"이라고 하는 것은 [Python 3.6.0](https://www.python.org/downloads/) 이상 버전을 뜻합니다.
 
@@ -21,7 +21,7 @@ https://www.python.org/downloads/ 에 접속해서 최신 버전의 설치 프�
 NOTE: 프로그래밍에 대해 이미 잘 알고 있고 Docker에 익숙하다면 [Python in Docker(영문)](https://hub.docker.com/_/python/)와 [Docker on Windows(영문)](https://docs.docker.com/windows/)를 확인해 보세요.
 
 
-### 명령 프롬프트
+### 명령 프롬프트{#dos-prompt}
 
 만약 파이썬을 명령 프롬프트 같은 윈도우 커맨드 라인툴에서 사용하고 싶다면 PATH 환경 변수를 알맞게 설정해야 합니다.
 
@@ -46,13 +46,13 @@ NOTE: 프로그래밍에 대해 이미 잘 알고 있고 Docker에 익숙하다�
 - 만약 원래 있던 문자열이 `%SystemRoot%\system32;`였다고 한다면 변경된 문자열은 `%SystemRoot%\system32;C:\Python36`이어야 합니다.
 - `확인` 버튼을 누르면 시스템을 재시작하지 않아도 변경 사항이 곧바로 적용됩니다만, 현재 실행중인 명령 프롬프트는 종료 후 다시 시작해주어야 합니다.
 
-### Running Python prompt on Windows
+### 윈도우에서 파이썬 실행하기
 
-For Windows users, you can run the interpreter in the command line if you have [set the `PATH` variable appropriately](#dos-prompt).
+[PATH 환경변수가 제대로 설정되어 있다면](#dos-prompt) 파이썬 인터프리터를 명령 프롬프트 상에서도 실행하실 수 있습니다.
 
-To open the terminal in Windows, click the start button and click `Run`. In the dialog box, type `cmd` and press `[enter]` key.
+윈도우에서 터미널 창을 열기 위해서는 시작 메뉴를 누르고 `실행` 버튼을 클릭하세요. 대화상자에 `cmd`를 입력하고 `엔터키`를 누르세요.
 
-Then, type `python` and ensure there are no errors.
+이제 `python`을 입력하고 파이썬 프롬프트가 잘 실행되는지 확인하세요.
 
 ## Installation on Mac OS X
 
