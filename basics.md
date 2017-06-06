@@ -40,12 +40,6 @@ print('hello world')
 
 ## 숫자형
 
-Numbers are mainly of two types - integers and floats.
-
-An example of an integer is `2` which is just a whole number.
-
-Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
-
 숫자형에는 정수형(Integer)과 부동 소수점 숫자형(Float)의 두 가지 종류가 있습니다. 
 
 정수형 숫자의 예는 `2`입니다. 이것은 단순히 2라는 숫자를 의미하는 것입니다. 부동 소수점 숫자의 예는 `3.23`, `52.3E-4`와 같은 값입니다. `E` 표기법은 E 뒤의 값이 10의 지수임을 나타냅니다. 예를 들어 `52.3E-4`는 `52.3 * 10^-4^`라는 값을 의미합니다.
@@ -158,8 +152,6 @@ print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ___hello___
 Swaroop wrote A Byte of Python
 ```
-
-Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
 
 지금까지 문자열 포맷팅에 대해 알아보았습니다. 여기서 `print` 명령은 언제나 주어진 문자열의 끝에 "줄바꿈" 문자 (`\n`) 을 덧붙인다는 것 또한 기억하세요. 따라서 `print` 명령을 호출할 때마다 인자로 주어진 내용들은 항상 그 다음 줄에 출력됩니다. 이것을 막기 위해서는 print 함수의 인자 `end`를 공백으로 지정하면 됩니다.
 ```python
