@@ -1,4 +1,4 @@
-# 설치{#installation}
+# 설치c
 
 이 책에서 "파이썬 3"이라고 하는 것은 [Python 3.6.0](https://www.python.org/downloads/) 이상 버전을 뜻합니다.
 
