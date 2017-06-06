@@ -1,120 +1,75 @@
-{#basics}
-# 기초
+# Basics
 
-화면에 `Hello World`를 출력하는 것만으로는 부족하지요?
-여러분은 아마 더 많은 것들을 해 보고 싶을 것입니다. 뭔가 정보를 입력받고,
-처리한 뒤 결과물을 출력하는 프로그램을 만들고 싶으실 테지요.
-파이썬에서는 상수들과 변수들을 이용하여 이러한 일을 할 수 있습니다.
-이 장에서는 이외에도 몇 가지 기본 기능들에 대해서도 다뤄 볼 것입니다.
+Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
 
-## 주석
+## Comments
 
-_주석_ 은 `#` 문자 뒤에 따라오는 짧은 문장입니다.
-주로 소스 코드를 읽는 사람들을 위해 주석을 남기는 용도로 빈번하게 사용됩니다.
+_Comments_ are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
 
-예제:
+For example:
 
-[source,python]
-```
-print 'hello world' # Note that print is a statement
+```python
+print('hello world') # Note that print is a function
 ```
 
-또다른 예제:
+or:
 
-[source,python]
+```python
+# Note that print is a function
+print('hello world')
 ```
-# Note that print is a statement
-print 'hello world'
-```
 
-여러분이 프로그램을 작성할 때, 주석을 가능한 많이 사용하시기 바랍니다.
+Use as many useful comments as you can in your program to:
 
-- 미리 가정하고 넘어간 것들에 대한 설명
-- 중요한 결정사항에 대한 설명
-- 중요한 세부사항에 대한 설명
-- 해결하고자 하는 문제에 대한 설명
-- 앞으로 극복하려고 하는 문제들에 대한 설명 등등.
+- explain assumptions
+- explain important decisions
+- explain important details
+- explain problems you're trying to solve
+- explain problems you're trying to overcome in your program, etc.
 
-http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html[*코드는 어떻게?
-라는 물음에 답하지만, 주석은 왜? 라는 물음에 답해야 합니다 (Code tells you how,
-comments should tell you why)*].
+[*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
 
-주석은 여러분의 프로그램을 읽는 사람들에게 여러분이 작성한 프로그램이 무엇을 하는 프로그램인지
-쉽게 파악할 수 있도록 도움을 주는 역할을 합니다. 프로그램을 작성하고 한 6개월쯤 뒤에는 여러분이 작성한 주석에
-도움을 받는 사람이 여러분 자신이 될 수도 있다는 점을 꼭 기억하세요!
+This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
 
-역자 주:
+## Literal Constants
 
-주석을 한글로 남길 경우, 혹은 여러분의 파이썬 프로그램에 한글이 들어갈 경우
-프로그램의 _첫번째 줄 혹은 두 번째 줄_에는 반드시 다음과 같이 파일의 인코딩에 대한 정보가
-주석의 형태로 들어가 있어야 합니다.
+An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'` or `"It's a string!"`.
 
-~~~python
-# coding=cp949
-~~~
+It is called a literal because it is _literal_ - you use its value literally. The number `2` always represents itself and nothing else - it is a _constant_ because its value cannot be changed. Hence, all these are referred to as literal constants.
 
-cp949란 마이크로소프트에서 제정한 한글 표현 방식을 뜻합니다 ([codepage 949](http://ko.wikipedia.org/wiki/%EC%BD%94%EB%93%9C_%ED%8E%98%EC%9D%B4%EC%A7%80_949)). 파일이 UTF-8형식으로 저장되는 경우 다음과 같이 작성합니다.
+## Numbers
 
-~~~python
-# coding=utf-8
-~~~
+Numbers are mainly of two types - integers and floats.
 
-자세한 사항은 [PEP 0263](http://www.python.org/dev/peps/pep-0263/) 및 뒤에서 다룰 [유니코드](./unicode.md#unicode) 섹션을
-참고하세요.
+An example of an integer is `2` which is just a whole number.
 
-## 리터럴 상수
+Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
 
-리터럴 상수는 `5`, `1.23` 과 같은 숫자나, `'This is a string'` 혹은 `"It's a string!"`
-과 같은 문자열 등을 말합니다.
+> **Note for Experienced Programmers**
+> 
+> There is no separate `long` type. The `int` type can be an integer of any size.
 
-이것들이 리터럴 상수라고 불리우는 이유는 이것들이 프로그램 내에 직접 _문자 형태로(literally)_
-지정되는 값들이기 때문입니다. 이러한 값들은 한번 지정되면 변하지 않습니다.
-예를 들면 숫자 `2` 는 언제나 자기 자신이 2라는 숫자임을 나타내며 어떤 다른 의미도 갖지 않습니다.
-이들은 한번 지정되면 그 값을 변경할 수 없기 때문에 _상수_입니다.
-그 중에서도 특별히 이러한 값들을 리터럴 상수라고 부릅니다.
+## Strings
 
-## 숫자형
+A string is a _sequence_ of _characters_. Strings are basically just a bunch of words.
 
-숫자형에는 정수형(Integer)과 부동 소수점 숫자형(Float)의 두 가지 종류가 있습니다.
+You will be using strings in almost every Python program that you write, so pay attention to the following part.
 
-정수형 숫자의 예는 `2` 입니다. 이것은 단순히 2 라는 숫자를 의미하는 것입니다.
+### Single Quote
 
-부동 소수점 숫자의 예는 `3.23`, `52.3E-4`와 같은 값입니다. `E` 표기법은
-E뒤의 값이 10의 지수임을 나타냅니다. 예를 들어 `52.3E-4` 는 `52.3 * 10^-4^`라는 값을
-의미합니다.
+You can specify strings using single quotes such as `'Quote me on this'`.
 
-### 숙련된 프로그래머들을 위한 주석
+All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
 
-[NOTE]
-파이썬에서는 `long` 형이 따로 없습니다.
-대신, `int` 형에 어떤 크기의 정수든지 담을 수 있습니다.
+### Double Quotes
 
-## 문자열
+Strings in double quotes work exactly the same way as strings in single quotes. An example is `"What's your name?"`.
 
-문자열이란 _문자_의 _나열_을 뜻합니다. 문자열은 간단하게 말하자면 문자들의 집합입니다.
-여러분은 아마 앞으로 작성하게 될 거의 모든 파이썬 프로그램에서 문자열을 사용하게 될
-것입니다. 따라서, 아래 항목들을 주의깊게 살펴보세요.
+### Triple Quotes {#triple-quotes}
 
-==== 작은 따옴표
+You can specify multi-line strings using triple quotes - (`"""` or `'''`). You can use single quotes and double quotes freely within the triple quotes. An example is:
 
-여러분은 작은 따옴표를 이용하여 문자열을 지정할 수 있습니다.
-예를 들어 `'Quote me on this'` 와 같이 하면 됩니다.
-
-모든 공백 문자, 즉 띄어쓰기나 탭 등은 입력한 그대로 유지됩니다.
-
-==== 큰 따옴표
-
-큰 따옴표로 둘러싸인 문자열은 작은 따옴표로 둘러싸인 문자열과 완전히 동일하게 취급됩니다.
-예를 들면, `"What's your name?"` 과 같습니다 (큰 따옴표로 둘러싸인 문자열 안에 작은 따옴표가 포함되어도 됩니다).
-
-{#triple_quotes}
-==== 따옴표 세 개
-
-여러 줄에 걸친 문자열은 세 개의 따옴표로 표현할 수 있습니다 - (`"""` 또는 `'''`). 세 개의 따옴표로
-묶여진 문자열 안에서는 작은 따옴표든 큰 따옴표든 마음대로 사용할 수 있습니다. 예를 들면 다음과 같습니다.
-
-[source,python]
-```
+```python
 '''This is a multi-line string. This is the first line.
 This is the second line.
 "What's your name?," I asked.
@@ -122,39 +77,37 @@ He said "Bond, James Bond."
 '''
 ```
 
-==== 문자열은 수정이 불가
+### Strings Are Immutable
 
-여러분이 문자열을 한번 만들면, 그 문자열의 내용은 더이상 변경할 수 없습니다.
-이것은 어떤 면에서는 좀 불편할 수 있다고 느낄 수 있겠습니다만, 사실은 그렇지 않습니다.
-책의 뒷부분에서 여러 프로그램 예시를 통해 왜 이것이 큰 제약이 아닌지 살펴볼 것입니다.
+This means that once you have created a string, you cannot change it. Although this might seem like
+a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
+we see later on.
 
-### C/C++ 프로그래머들을 위한 주석
-[NOTE]
-파이썬에서는 `char` 형이 따로 구분되어 있지 않습니다. 파이썬에서는 이것이 딱히 필요가 없습니다.
-곧 여러분도 `char` 형을 찾지 않게 될 것입니다.
+> **Note for C/C++ Programmers**
+> 
+> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
 
-### Perl/PHP 프로그래머들을 위한 주석
-[NOTE]
-파이썬에서는 작은 따옴표와 큰 따옴표로 둘러싸인 문자열을 동일하게 취급합니다.
-둘 사이에 어떤 차이도 없습니다.
+<!-- -->
 
-==== 문자열 포맷팅
+> **Note for Perl/PHP Programmers**
+> 
+> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
 
-문자열을 생성하려고 할 때, 종종 다른 정보들을 포함하여 생성하고 싶을 때가 있습니다.
-이것을 문자열 포맷팅이라고 하며, 이를 위해 `format()` 을 이용합니다.
+### The format method
 
-다음을 `str_format.py` 라는 이름으로 저장하세요.
+Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
 
-[source,python]
-```
+Save the following lines as a file `str_format.py`:
+
+```python
 age = 20
 name = 'Swaroop'
 
-print '{0} was {1} years old when he wrote this book'.format(name, age)
-print 'Why is {0} playing with that python?'.format(name)
+print('{0} was {1} years old when he wrote this book'.format(name, age))
+print('Why is {0} playing with that python?'.format(name))
 ```
 
-실행 결과:
+Output:
 
 ```
 $ python str_format.py
@@ -162,59 +115,45 @@ Swaroop was 20 years old when he wrote this book
 Why is Swaroop playing with that python?
 ```
 
-### 동작 원리
+**How It Works**
 
-먼저 중괄호로 표현된 특별한 표시들이 포함된 문자열을 만들고,
-그 후에 문자열의 `format` 메소드를 사용하여 이 표시들을 `format` 메소드에
-주어진 인자들로 치환한 것입니다.
+A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
 
-위 예시에서는 문자열 내에서 첫번째로 `{0}` 이 사용되었으며
-이것은 format 메소드에 주어진 첫번째 인자, 즉 변수 `name` 에 해당됩니다.
-마찬가지로, 두번째 사용된 표시는 `{1}` 이며 이것은 format 메소드에 주어진 두번째 인자인
-`age` 에 해당됩니다. 파이썬은 숫자를 셀 때 항상 0 부터 세기 시작한다는 점에 유의하세요.
-즉, 첫번째 인자의 인덱스는 0 이며, 두번째는 1 입니다.
+Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
 
-또한 다음과 같이 문자열 더하기를 이용하여 동일한 결과를 얻을 수도 있습니다.
+Notice that we could have achieved the same using string concatenation:
 
-[source,python]
-```
-name ` ' is ' ` str(age) + ' years old'
+```python
+name + ' is ' + str(age) + ' years old'
 ```
 
-그러나 이것은 척 보기에도 깔끔하지 못하며, 작성 중 실수하기도 쉽습니다.
-또 이 경우 각 변수를 일일이 명시적으로 문자열로 변환해주어야 하지만,
-`format` 메소드를 이용할 경우에는 알아서 자동으로 변환해 줍니다.
-또 `format` 메소드를 이용할 경우 변수들을 신경쓰지 않고 문자열의 내용을 수정하기 쉽고,
-문자열에 신경쓰지 않고도 변수의 위치나 순서 등을 변경하기가 더 쉽습니다.
+but that is much uglier and error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
 
-이 때 중괄호 내에 주어진 숫자는 생략할 수 있습니다. 다음 예제를 확인하세요.
+Also note that the numbers are optional, so you could have also written as:
 
-[source,python]
-```
+```python
 age = 20
 name = 'Swaroop'
 
-print '{} was {} years old when he wrote this book'.format(name, age)
-print 'Why is {} playing with that python?'.format(name)
+print('{} was {} years old when he wrote this book'.format(name, age))
+print('Why is {} playing with that python?'.format(name))
 ```
 
-위 프로그램 또한 동일한 결과를 출력합니다.
+which will give the same exact output as the previous program.
 
-파이썬의 `format`은 중괄호 표시의 위치에 주어진 인자들의 값을 치환해 넣습니다.
-이때, 중괄호 표시에 다음과 같이 좀 더 상세히 세부사항을 지정할 수도 있습니다.
+What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
 
-[source,python]
-```
-# 소수점 이하 셋째 자리까지 부동 소숫점 숫자 표기 (0.333)
-print '{0:.3f}'.format(1.0/3)
-# 밑줄(_)로 11칸을 채우고 가운데 정렬(^)하기 (___hello___)
-print '{0:_^11}'.format('hello')
-# 사용자 지정 키워드를 이용해 (Swaroop wrote A Byte of Python) 표기
-print '{name} wrote {book}'.format(name='Swaroop',
-                                   book='A Byte of Python')
+```python
+# decimal (.) precision of 3 for float '0.333'
+print('{0:.3f}'.format(1.0/3))
+# fill with underscores (_) with the text centered
+# (^) to 11 width '___hello___'
+print('{0:_^11}'.format('hello'))
+# keyword-based 'Swaroop wrote A Byte of Python'
+print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-실행 결과:
+Output:
 
 ```
 0.333
@@ -222,166 +161,138 @@ ___hello___
 Swaroop wrote A Byte of Python
 ```
 
-지금까지 문자열 포맷팅에 대해 알아보았습니다. 여기서 `print` 명령은 언제나 주어진 문자열의
-끝에 "줄바꿈" 문자 (`\n`) 을 덧붙인다는 것 또한 기억하세요.
-따라서 `print` 명령을 호출할 때마다 인자로 주어진 내용들은 항상 그 다음 줄에 출력됩니다.
-이것을 막기 위해서는, `print` 명령 뒤에 쉼표(,)를 붙여주면 됩니다.
+Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
 
-[source,python]
-```
-print "a",
-print "b",
+```python
+print('a', end='')
+print('b', end='')
 ```
 
-실행 결과:
+Output is:
 
 ```
-a b
+ab
 ```
 
-==== 이스케이프(Escape) 문자
+Or you can `end` with a space:
 
-여러분이 작은 따옴표(`'`)를 포함하고 있는 문자열 하나를 정의하고 싶다고 해 봅시다.
-이 경우 어떻게 이 문자열을 정의하면 될까요? 예를 들면 `What's your name?` 과 같은 문자열을 정의하는 것입니다.
-물론 `"What's your name?"`이라고 하면 되겠지만, `'What's your name?'`과 같은 방식을 사용할수는 없습니다.
-왜냐면 이 경우 문자열의 시작과 끝이 어디부터 어디까지인지 모호해지기 때문이죠. 따라서 우리는 문자열 안에 포함된 작은 따옴표가
-문자열의 끝을 의미하는 것이 아니라는 것을 파이썬에게 알려줘야 합니다.
-이것은 _이스케이프 문자_라 불리우는 것을 이용하면 해결할 수 있습니다.
-사용법은 작은 따옴표 앞에 `\` 문자(kbd:[enter] 키 위에 있습니다)를 붙여 `\'` 와 같은 방식으로 표기하면 됩니다.
-이를 이용하면, 위의 문자열은 `'What\'s your name?'` 과 같이 표기할 수 있습니다.
-
-위 문자열을 정의하는 또 다른 방법은 큰 따옴표를 사용하여 `"What's your
-name?"` 과 같이 표기하는 것입니다. 큰 따옴표로 지정된 문자열 안에 포함된 큰 따옴표도
-마찬가지로 이스케이프 문자를 이용하여 표기할 수 있습니다. 또한, 여러분이
-`\` 문자를 표기하고 싶을 경우에는 `\\` 라 표기하면 됩니다.
-
-한편 여러분이 두 줄짜리 문자열을 정의하고 싶을 경우 어떻게 하면 될까요?
-한가지 방법은 [위에서 다루었듯이](./triple_quotes.md#triple_quotes) 따옴표 세 개로 문자열을 정의하거나,
-혹은 이스케이프 문자를 이용하여 줄바꿈 문자 (newline character) `\n` 을 사용하여 줄바꿈을 표현할 수 있습니다.
-다음 예제를 확인하세요.
-
-[source,python]
+```python
+print('a', end=' ')
+print('b', end=' ')
+print('c')
 ```
+
+Output is:
+
+```
+a b c
+```
+
+### Escape Sequences
+
+Suppose, you want to have a string which contains a single quote (`'`), how will you specify this string? For example, the string is `"What's your name?"`. You cannot specify `'What's your name?'` because Python will be confused as to where the string starts and ends. So, you will have to specify that this single quote does not indicate the end of the string. This can be done with the help of what is called an _escape sequence_. You specify the single quote as `\'` : notice the backslash. Now, you can specify the string as `'What\'s your name?'`.
+
+Another way of specifying this specific string would be `"What's your name?"` i.e. using double quotes. Similarly, you have to use an escape sequence for using a double quote itself in a double quoted string. Also, you have to indicate the backslash itself using the escape sequence `\\`.
+
+What if you wanted to specify a two-line string? One way is to use a triple-quoted string as shown [previously](#triple-quotes) or you can use an escape sequence for the newline character - `\n` to indicate the start of a new line. An example is:
+
+```python
 'This is the first line\nThis is the second line'
 ```
 
-또 한가지 유용한 이스케이프 문자는 `\t`로 표현되는 탭 문자입니다.
-이외에도 여러가지 이스케이프 문자를 이용한 유용한 다른 표기들이 있습니만,
-일단은 가장 유용한 것 몇가지를 알려 드리는 것이니 알아두세요.
+Another useful escape sequence to know is the tab: `\t`. There are many more escape sequences but I have mentioned only the most useful ones here.
 
-또 한가지 유용한 것은 문자열을 정의할 때 줄의 끝에 `\` 문자를 붙여 주면,
-그 다음 줄에 정의된 문자열을 끊김없이 이어 붙여 문자열을 정의하게 됩니다.
-예를 들면 다음과 같습니다.
+One thing to note is that in a string, a single backslash at the end of the line indicates that the string is continued in the next line, but no newline is added. For example:
 
-[source,python]
-```
+```python
 "This is the first sentence. \
 This is the second sentence."
 ```
 
-위 예제는 다음 예제와 동일합니다.
+is equivalent to
 
-[source,python]
-```
+```python
 "This is the first sentence. This is the second sentence."
 ```
 
-==== 순 문자열
+### Raw String
 
-문자열 내에 포함된 이스케이프 문자 등을 처리하지 않고 그대로 출력하고 싶을 때,
-문자열 앞에 `r` 또는 `R` 문자를 붙여 _순(Raw)_ 문자열임을 표기합니다. 다음 예제를 확인하세요.
+If you need to specify some strings where no special processing such as escape sequences are handled, then what you need is to specify a _raw_ string by prefixing `r` or `R` to the string. An example is:
 
-[source,python]
-```
+```python
 r"Newlines are indicated by \n"
 ```
 
-### 정규 표현식 사용자를 위한 주석
-[NOTE]
-정규 표현식을 사용할 때는 항상 순 문자열을 사용하세요. 그렇지 않으면 문자열 내에 이스케이프 문자가
-너무 많아져 알아볼 수 없게 될지도 모릅니다. 순 문자열을 사용하면, `'\\1'` 을 `r'\1'`로 짧게 표기가 가능합니다.
+> **Note for Regular Expression Users**
+> 
+> Always use raw strings when dealing with regular expressions. Otherwise, a lot of backwhacking may be required. For example, backreferences can be referred to as `'\\1'` or `r'\1'`.
 
-## 변수
+## Variable
 
-리터럴 상수만 사용하여 프로그램을 작성할 수는 없습니다.
-뭔가 정보를 담고, 수정할 수 있는 어떤 공간이 필요할 것입니다.
-즉, _변수_를 이용하는 것이 좋습니다. 변수는 이름 그대로 _변_할 수 있는 공간을 말하며,
-여기에는 무엇이든 저장할 수 있습니다. 변수들은 단순히 정보를 저장할 때 사용되는 컴퓨터의 기억 장치의
-한 부분을 가져다가 적당한 이름을 붙여 사용하는 것입니다. 리터럴 상수와는 달리, 변수들은 프로그램 내에서
-여러 방법을 통해 변경되고 사용되기 때문에 한눈에 알아보기 쉬운 이름을 지어 줍시다.
+Using just literal constants can soon become boring - we need some way of storing any information and manipulate them as well. This is where _variables_ come into the picture. Variables are exactly what the name implies - their value can vary, i.e., you can store anything using a variable. Variables are just parts of your computer's memory where you store some information. Unlike literal constants, you need some method of accessing these variables and hence you give them names.
 
-## 식별자 이름 짓기
+## Identifier Naming
 
-변수 이름은 식별자의 한 예입니다. _식별자_란 _무언가_를 식별하기 위해 주어진 그것의 이름을 말합니다.
-식별자를 짓는데는 다음과 같은 규칙이 있습니다.
+Variables are examples of identifiers. _Identifiers_ are names given to identify _something_. There are some rules you have to follow for naming identifiers:
 
-- 식별자의 첫 문자는 알파벳 문자 (ASCII 대/소문자 혹은 유니코드 문자)이거나 밑줄 (`_`) 이어야 합니다.
-- 나머지는 문자 (ASCII 대/소문자 혹은 유니코드 문자), 밑줄 (`_`), 또는 숫자 (0-9)가 될 수 있습니다.
-- 식별자는 대/소문자를 구분합니다. 예를 들어, `myname` 과 `myName` 은 _다릅니다_. 전자의 `n`은 소문자이고,
-  후자의 `N`은 대문자입니다.
-- _올바른_ 식별자 이름은 `i`, `name_2_3` 등과 같습니다. _올바르지 않은_
-  식별자 이름은 `2things`, `this is spaced out`, `my-name`, `>a1b2_c3` 등입니다.
+- The first character of the identifier must be a letter of the alphabet (uppercase ASCII or lowercase ASCII or Unicode character) or an underscore (`_`).
+- The rest of the identifier name can consist of letters (uppercase ASCII or lowercase ASCII or Unicode character), underscores (`_`) or digits (0-9).
+- Identifier names are case-sensitive. For example, `myname` and `myName` are _not_ the same. Note the lowercase `n` in the former and the uppercase `N` in the latter.
+- Examples of _valid_ identifier names are `i`, `name_2_3`. Examples of _invalid_ identifier names are `2things`, `this is spaced out`, `my-name` and `>a1b2_c3`.
 
-## 자료형
+## Data Types
 
-변수는 여러 가지 _자료형_의 값을 담을 수 있습니다. 가장 간단한 자료형의 예는 앞에서 이야기한 숫자형과 문자열입니다.
-뒷장에서, [클래스](./oop.md#oop)를 이용한 사용자 정의 자료형을 만드는 법 또한 배우게 될 것입니다.
+Variables can hold values of different types called _data types_. The basic types are numbers and strings, which we have already discussed. In later chapters, we will see how to create our own types using [classes](./oop.md#classes).
 
-## 객체
+## Object
 
-파이썬에서 사용되는 모든 것은 _객체_입니다. "_그것_"'라고 표현하는 대신, "그 _객체_" 라고 말합니다.
+Remember, Python refers to anything used in a program as an _object_.  This is meant in the generic sense. Instead of saying "the _something_"', we say "the _object_".
 
-### 객체 지향 프로그래머들을 위한 주석
-[NOTE]
-파이썬은 강력한 객체 지향 언어로써 숫자, 문자, 함수 등등 모든 것을 객체로 취급합니다.
+> **Note for Object Oriented Programming users**:
+>
+> Python is strongly object-oriented in the sense that everything is an object including numbers, strings and functions.
 
-이제 리터럴 상수들과 함께 변수를 사용하는 방법을 알아보도록 하겠습니다. 다음 예제를 저장한 후 실행하여 봅시다.
+We will now see how to use variables along with literal constants. Save the following example and run the program.
 
-## 파이썬 프로그램 작성하기
+## How to write Python programs
 
-이제부터, 다음과 같이 파이썬 프로그램을 저장하고 실행하도록 합시다:
+Henceforth, the standard procedure to save and run a Python program is as follows:
 
-## PyCharm을 이용할 경우
+### For PyCharm
 
-###  <<pycharm>> 을 실행합니다.
-###  적당한 파일명을 입력하고, 새 파일을 만듭니다.
-###  예제로 주어진 프로그램 코드를 입력합니다.
-###  현재 파일을 우클릭하고 실행(Run)을 누릅니다.
+1. Open [PyCharm](./first_steps.md#pycharm).
+2. Create new file with the filename mentioned.
+3. Type the program code given in the example.
+4. Right-click and run the current file.
 
-[NOTE]
-====
-프로그램을 실행할 때 [명령줄 인수](./module.md#module)와 함께 실행하고 싶을 경우,
-메뉴의 `Run` -> `Edit Configurations` 을 누르고 `Script parameters:` 섹션에 
-인수를 입력해 준 뒤 `OK` 버튼을 누르면 됩니다:
+NOTE: Whenever you have to provide [command line arguments](./modules.md#modules), click on `Run` -> `Edit Configurations` and type the arguments in the `Script parameters:` section and click the `OK` button:
 
 ![PyCharm command line arguments](./img/pycharm_command_line_arguments.png)
-====
 
-## 다른 편집기를 이용할 경우
+### For other editors
 
-###  사용하고자 하는 편집기를 실행합니다.
-###  예제 프로그램을 입력합니다.
-###  적당한 파일명을 짓고 저장합니다.
-###  `python program.py` 와 같이 실행하여 파이썬 인터프리터를 통해 프로그램을 실행합니다.
+1. Open your editor of choice.
+2. Type the program code given in the example.
+3. Save it as a file with the filename mentioned.
+4. Run the interpreter with the command `python program.py` to run the program.
 
-## 예제: 변수와 리터럴 상수 사용하기
+### Example: Using Variables And Literal Constants
 
-다음 프로그램을 입력 후 실행하세요.
+Type and run the following program:
 
-[source,python]
-```
+```python
 # Filename : var.py
 i = 5
-print i
+print(i)
 i = i + 1
-print i
+print(i)
 
 s = '''This is a multi-line string.
 This is the second line.'''
-print s
+print(s)
 ```
 
-실행 결과:
+Output:
 
 ```
 5
@@ -390,154 +301,119 @@ This is a multi-line string.
 This is the second line.
 ```
 
-### 동작 원리
+**How It Works**
 
-위 프로그램의 동작 원리는 다음과 같습니다.
-먼저, 리터럴 상수 `5` 라는 값을 변수 `i` 에 할당 연산자 (`=`)를 이용하여 할당하였습니다.
-이러한 한 줄을 명령이라고 부르는데, 이 경우 변수명 `i` 를 값 `5` 에 할당하는 행위를 지정해 준 것이기 때문니다.
-다음으로, `i` 에 할당된 값을 `print` 명령을 이용하여 출력합니다. 그러면 변수에 지정된 값이 화면에 나타납니다.
+Here's how this program works. First, we assign the literal constant value `5` to the variable `i` using the assignment operator (`=`). This line is called a statement because it states that something should be done and in this case, we connect the variable name `i` to the value `5`. Next, we print the value of `i` using the `print` statement which, unsurprisingly, just prints the value of the variable to the screen.
 
-그리고 `i` 에 할당된 값에 `1`을 더한 후 그 값을 다시 변수에 할당합니다. 이제 이 값을 출력하면,
-예상대로, `6` 이라는 값이 출력됨을 알 수 있습니다.
+Then we add `1` to the value stored in `i` and store it back. We then print it and expectedly, we get the value `6`.
 
-리터럴 문자열 상수 또한 앞에서 설명한 과정과 동일한 과정을 거쳐 변수 `s` 에 저장된 후 화면에 출력됩니다.
+Similarly, we assign the literal string to the variable `s` and then print it.
 
-### 정적 언어 프로그래머들을 위한 주석
-[NOTE]
-파이썬에서는 변수에 값을 할당함으로써 자동으로 해당 변수가 생성되며 곧바로 사용할 수 있습니다.
-따로 변수의 자료형을 지정할 필요도 없고, 미리 변수를 선언할 필요도 없습니다.
+> **Note for static language programmers**
+> 
+> Variables are used by just assigning them a value. No declaration or data type definition is needed/used.
 
-## 논리적/물리적 명령행
+## Logical And Physical Line
 
-물리적 명령행이란 프로그램 코드 내에 _직접 표현된_ 한 줄을 의미하는 반면,
-논리적 명령행은 _파이썬 인터프리터 관점_에서의 한 명령 단위를 의미합니다.
-파이썬은 각각의 물리적 명령행이 곧 논리적 명령행일 것이라고 내부적으로 간주하고 프로그램을 실행합니다.
+A physical line is what you _see_ when you write the program. A logical line is what _Python sees_ as a single statement. Python implicitly assumes that each _physical line_ corresponds to a _logical line_.
 
-논리적 명령행이란 예를 들면 `print 'hello world'` 같은 것입니다.
-만약 이것이 실제 코드 상으로도 한 줄로 표현되어 있다면 (편집기에서 보이는 그대로를 말합니다),
-이 한 줄은 물리적 명령행이라고도 말할 수 있을 것입니다.
+An example of a logical line is a statement like `print 'hello world'` - if this was on a line by itself (as you see it in an editor), then this also corresponds to a physical line.
 
-일반적으로 파이썬으로 프로그래밍할 경우, 한 명령을 한 행에 적어
-전체적인 코드를 파악하기 쉽게 작성하기를 권합니다.
+Implicitly, Python encourages the use of a single statement per line which makes code more readable.
 
-만약 여러분이 한 물리적 명령행에 둘 이상의 논리적 명령행을 넣고 싶다면,
-세미콜론 (`;`)을 이용하여 논리적 명령행의 끝을 명시적으로 파이썬 인터프리터에게 알려줄 수 있습니다.
-다음 예제를 확인하세요.
+If you want to specify more than one logical line on a single physical line, then you have to explicitly specify this using a semicolon (`;`) which indicates the end of a logical line/statement. For example:
 
-[source,python]
-```
+```python
 i = 5
-print i
+print(i)
 ```
 
-위 예제는 다음 예제와 같습니다.
+is effectively same as
 
-[source,python]
-```
+```python
 i = 5;
-print i;
+print(i);
 ```
 
-이것은 다음 예제와도 같습니다.
+which is also same as
 
-[source,python]
-```
-i = 5; print i;
-```
-
-또한 다음 예제와도 같습니다.
-
-[source,python]
-```
-i = 5; print i
+```python
+i = 5; print(i);
 ```
 
-하지만, 저는 여러분이 *한 물리적 명령행에 두개 이상의 논리적 명령행을 사용하지 말 것*을 *강력히 권합니다*.
-즉, 세미콜론을 사용하지 말아 주세요. 사실, 저는 파이썬 프로그램을 작성할 때 세미콜론을 _한번도_
-사용해 본 적이 없고, 또 다른 사람이 사용하는 것을 본 적도 없습니다.
+and same as
 
-한 명령행이 너무 길어서 보기가 불편한 경우, 백슬래시 문자(`\`)를 이용하여
-한 논리적 명령행을 여러 물리적 명령행으로 나눌 수 있습니다. 이를 _명시적 행간 결합_이라 부릅니다.
-
-[source,python]
+```python
+i = 5; print(i)
 ```
+
+However, I *strongly recommend* that you stick to *writing a maximum of a single logical line on each single physical line*. The idea is that you should never use the semicolon. In fact, I have _never_ used or even seen a semicolon in a Python program.
+
+There is one kind of situation where this concept is really useful: if you have a long line of code, you can break it into multiple physical lines by using the backslash. This is referred to as _explicit line joining_:
+
+```python
 s = 'This is a string. \
 This continues the string.'
-print s
+print(s)
 ```
 
-실행 결과:
+Output:
 
 ```
 This is a string. This continues the string.
 ```
 
-다음과 같이 쓸 수도 있습니다.
+Similarly,
 
-[source,python]
-```
-print \
-i
-```
-
-위 예제는 다음과 같습니다.
-
-[source,python]
-```
-print i
+```python
+i = \
+5
 ```
 
-가끔, 백슬래시 없이 행간을 합칠 수 있는 경우도 있습니다. 이것은 명령행의 중간에 괄호가 있을 때,
-즉 대괄호나 중괄호를 열었을 경우 괄호를 닫을 때까지 백슬래시 없이도 모두 같은 명령행으로 간주됩니다.
-이것은 *비명시적 행간 결합*이라고 부릅니다. 뒷장에서 [리스트](./list.md#list)를 사용하여 프로그램을 작성할 때
-이런 경우를 보게 될 것입니다.
+is the same as
 
-{#indentation}
-## 들여쓰기
-
-파이썬에서 공백은 중요한 역할을 합니다. 사실, *한 행의 앞에 붙어있는 공백이 정말 중요합니다*.
-이것을 _들여쓰기_라 부릅니다. 한 논리적 명령행의 앞에 붙어있는 공백 (빈 칸 혹은 탭)은
-논리적 명령행의 들여쓰기 단계를 의미하며, 이것은 한 명령의 범위를 구분하는 데 사용됩니다.
-
-이것은 같은 들여쓰기 단계에 있는 명령들은 _반드시_ 같은 들여쓰기를 사용해야 함을 의미합니다.
-이러한 같은 들여쓰기를 사용하고 있는 명령들의 집합을 *블록(block)* 이라고 부릅니다.
-뒷장에서 예제를 통해 블록에 대해 다루게 될 것입니다.
-
-지금 여러분이 기억하셔야 할 것은 잘못된 들여쓰기는 오류를 일으킨다는 것입니다. 다음 예제를 봅시다.
-
-[source,python]
-```
+```python
 i = 5
-# 다음 행에서 오류가 발생합니다! 행 앞에 잘못된 공백이 한 칸 있습니다.
- print 'Value is ', i
-print 'I repeat, the value is ', i
 ```
 
-위 예제를 실행하면 다음과 같이 오류가 발생합니다.
+Sometimes, there is an implicit assumption where you don't need to use a backslash. This is the case where the logical line has a starting parentheses, starting square brackets or a starting curly braces but not an ending one. This is called *implicit line joining*. You can see this in action when we write programs using [list](./data_structures.md#lists) in later chapters.
+
+## Indentation
+
+Whitespace is important in Python. Actually, *whitespace at the beginning of the line is important*. This is called _indentation_. Leading whitespace (spaces and tabs) at the beginning of the logical line is used to determine the indentation level of the logical line, which in turn is used to determine the grouping of statements.
+
+This means that statements which go together _must_ have the same indentation. Each such set of statements is called a *block*. We will see examples of how blocks are important in later chapters.
+
+One thing you should remember is that wrong indentation can give rise to errors. For example:
+
+```python
+i = 5
+# Error below! Notice a single space at the start of the line
+ print('Value is', i)
+print('I repeat, the value is', i)
+```
+
+When you run this, you get the following error:
 
 ```
-  File "whitespace.py", line 5
-    print 'Value is ', i
+  File "whitespace.py", line 3
+    print('Value is', i)
     ^
 IndentationError: unexpected indent
 ```
 
-두번째 행 앞에 공백이 한칸 있다는 점을 확인하세요. 위와 같은 오류는 파이썬이 우리에게 프로그램의 문법이
-잘못되었음을, 즉 프로그램이 뭔가 잘못 작성되었다는 것을 알려 주는 것입니다. 이 오류가 의미하는 것은
-_여러분이 임의로 새 블록을 시작할 수 없음_ 을 의미합니다. 새 블록을 시작할 수 있는 경우에
-대해 [흐름 제어](./control_flow.md#control_flow) 챕터에서 다루게 될 것입니다.
+Notice that there is a single space at the beginning of the second line. The error indicated by Python tells us that the syntax of the program is invalid i.e. the program was not properly written. What this means to you is that _you cannot arbitrarily start new blocks of statements_ (except for the default main block which you have been using all along, of course). Cases where you can use new blocks will be detailed in later chapters such as the [control flow](./control_flow.md#control_flow).
 
-### 들여쓰기 하는 법
-들여쓰기를 할 때에는 공백 4개를 이용하세요. 이것은 파이썬 언어에서 공식적으로 추천하는 방법입니다.
-좋은 편집기들은 이 사항을 자동으로 준수합니다. 또, 들여쓰기를 할 때에는 항상 같은 개수의 공백을
-사용해야 한다는 점에 유의하시기 바랍니다.
+> **How to indent**
+> 
+> Use four spaces for indentation. This is the official Python language recommendation. Good editors will automatically do this for you. Make sure you use a consistent number of spaces for indentation, otherwise your program will not run or will have unexpected behavior.
 
-### 정적 언어 프로그래머들을 위한 주석
-[NOTE]
-파이썬은 블록 구분을 위해 들여쓰기를 사용하며, 중괄호를 사용하지 않습니다.
-파이썬에서 ``from __future__ import braces`` 명령을 실행하여 자세한 사항을 확인하세요.
+<!-- -->
 
-## 요약
-지금까지 파이썬의 여러 기본적인 특징에 대해 배워보았습니다. 이제 흐름 제어와 같이 좀 더 재미있는
-부분에 대해 배워 보도록 하겠습니다. 다음 챕터로 넘어가기 전, 이 챕터에서 배운 내용에 대해
-미리 익숙해져 두기를 바랍니다.
+> **Note to static language programmers**
+> 
+> Python will always use indentation for blocks and will never use braces. Run `from __future__ import braces` to learn more.
+
+## Summary
+
+Now that we have gone through many nitty-gritty details, we can move on to more interesting stuff such as control flow statements. Be sure to become comfortable with what you have read in this chapter.
