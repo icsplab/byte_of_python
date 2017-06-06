@@ -70,8 +70,7 @@ Hello World
 {#pycharm}
 ## PyCharm
 
-[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-educational/)은 여러분이 파이썬으로
-프로그램을 작성할 때 사용할 수 있는 무료 편집기입니다.
+[PyCharm Educational Edition](https://www.jetbrains.com/pycharm-educational/)은 여러분이 파이썬으로 프로그램을 작성할 때 사용할 수 있는 무료 편집기입니다.
 
 PyCharm을 처음 실행하면 아래와 같은 화면을 보게 될 것입니다. `Create New Project` 를 누르세요:
 
@@ -101,9 +100,9 @@ PyCharm을 처음 실행하면 아래와 같은 화면을 보게 될 것입니�
 
 이제 자동으로 미리 입력되어 있는 것들을 모두 삭제한 뒤, 다음을 입력합니다:
 
-[source,python]
+
 ```
-print "hello world"
+print("hello world")
 ```
 
 입력이 끝났으면 소스 코드 창에서 오른쪽 버튼을 클릭하고, `Run 'hello'` 버튼을 누릅니다.
@@ -114,73 +113,58 @@ print "hello world"
 
 ![PyCharm output](./img/pycharm_output.png)
 
-여기까지입니다! 지금은 처음이기 때문에 몇가지 초기 설정을 더 해 주었지만, 다음부터는 왼쪽 사이드바에서
-`helloworld` 를 오른쪽 클릭 -> `New` -> `Python File` 을 선택한 후 위와 동일한 방법을 따라서 새 프로그램을
-입력한 후 실행하면 됩니다.
+여기까지입니다! 지금은 처음이기 때문에 몇가지 초기 설정을 더 해 주었지만, 다음부터는 왼쪽 사이드바에서 `helloworld` 를 오른쪽 클릭 -> `New` -> `Python File` 을 선택한 후 위와 동일한 방법을 따라서 새 프로그램을 입력한 후 실행하면 됩니다.
 
-PyCharm에 대해 더 자세히 알고 싶으시다면,
-[PyCharm Quickstart 페이지(영문)](https://www.jetbrains.com/pycharm-educational/quickstart/) 를 참조하세요.
+PyCharm에 대해 더 자세히 알고 싶으시다면 [PyCharm Quickstart 페이지(영문)](https://www.jetbrains.com/pycharm-educational/quickstart/)를 참조하세요.
 
 ## Vim
 
-###  [Vim](http://www.vim.org) 설치하기
-  .. Mac OS X 사용자들은 [HomeBrew](http://brew.sh/) 를 통해 `macvim` 패키지를 설치하세요.
-  .. Windows 사용자들은 http://www.vim.org/download.php 에서 "self-installing executable"을 내려받아 설치하세요.
-  .. GNU/Linux 사용자들은 각 배포판의 소프트웨어 저장소에서 Vim을 내려받아 설치하여야 합니다.
-  예를 들어 데비안 혹은 우분투의 경우 [vim](http://packages.ubuntu.com/saucy/vim) 패키지를 설치하세요.
-###  John M Anderson이 쓴 http://blog.sontek.net/blog/detail/turning-vim-into-a-modern-python-ide[Vim as Python
-  IDE] 를 읽으세요.
-###  자동완성 기능을 설치하시려면 다음 플러그인을 설치하세요. [jedi-vim](https://github.com/davidhalter/jedi-vim).
+1. [Vim](http://www.vim.org) 설치하기
+  - Mac OS X 사용자들은 [HomeBrew](http://brew.sh/) 를 통해 `macvim` 패키지를 설치하세요.
+  - Windows 사용자들은 [Vim 웹사이트](http://www.vim.org/download.php)에서 "self-installing executable"을 내려받아 설치하세요.
+  - GNU/Linux 사용자들은 각 배포판의 소프트웨어 저장소에서 Vim을 내려받아 설치하여야 합니다.
+1. 자동완성 기능을 설치하시려면 다음 플러그인을 설치하세요. [jedi-vim](https://github.com/davidhalter/jedi-vim).
+1. jedi 파이썬 패키지를 다음과 같이 설치하세요 : pip install -U jedi
 
 ## Emacs
 
-###  [Emacs 24](http://www.gnu.org/software/emacs/) 설치하기
-  .. Mac OS X 사용자들은 http://emacsformacosx.com 에서 Emacs를 내려받아 설치하세요.
-  .. Windows 사용자들은 http://ftp.gnu.org/gnu/emacs/windows/ 에서 Emacs를 내려받아 설치하세요.
-  .. GNU/Linux 사용자들은 각 배포판의 소프트웨어 저장소에서 Emacs를 내려받아 설치하여야 합니다.
-  예를 들어 데비안 혹은 우분투의 경우 [emacs24](http://packages.ubuntu.com/saucy/emacs24) 패키지를 설치하세요.
-###  [ELPY](https://github.com/jorgenschaefer/elpy) 를 설치하거나, 혹은 [Emacs Prelude](https://github.com/bbatsov/prelude)
-  배포판을 설치하여 사용하세요.
+1. [Emacs 24](http://www.gnu.org/software/emacs/) 설치하기
+  - Mac OS X 사용자들은 http://emacsformacosx.com 에서 Emacs를 내려받아 설치하세요.
+  - Windows 사용자들은 http://ftp.gnu.org/gnu/emacs/windows/ 에서 Emacs를 내려받아 설치하세요.
+  - GNU/Linux 사용자들은 각 배포판의 소프트웨어 저장소에서 Emacs를 내려받아 설치하여야 합니다.
+1. [ELPY](https://github.com/jorgenschaefer/elpy/wiki) 를 설치하세요.
 
 ## 소스 파일 사용하기
 
-이제 프로그래밍으로 돌아갑시다. 아마 여러분이 어떤 언어를 배우던지,
-'Hello World' 라는 프로그램을 처음 작성하고 실행하게 될 것입니다.
-이 프로그램이 하는 일은 실행했을 때 단순히 'Hello World' 라는 문자열을 화면에 출력하는 것이 전부인데요,
-Simon Cozens ('Beginning Perl'의 저자)은 이에 대해 다음과 같이 말했습니다.
-"Hello World란 프로그래밍 신에게 이 언어를 잘 배울 수 있도록 도와 달라는, 일종의 주문이다."
+이제 프로그래밍으로 돌아갑시다. 아마 여러분이 어떤 언어를 배우든지 'Hello World' 라는 프로그램을 처음 작성하고 실행하게 될 것입니다. 이 프로그램이 하는 일은 실행했을 때 단순히 'Hello World' 라는 문자열을 화면에 출력하는 것이 전부인데요 Simon Cozens ('Beginning Perl'의 저자)은 이에 대해 다음과 같이 말했습니다. "Hello World란 프로그래밍 신에게 이 언어를 잘 배울 수 있도록 도와 달라는 일종의 주문이다."
 
 여러분이 선택한 편집기를 실행하시고, 다음과 같이 프로그램을 작성한 뒤 `hello.py` 라는 이름으로 저장하세요.
 
 만약 여러분이 PyCharm을 선택하셨다면, 앞에서 다룬 [PyCharm으로 파이썬 소스 파일을 저장하고 실행하는 방법](./pycharm.md#pycharm)을 참고하세요.
 다른 에디터를 선택하셨다면, 새 파일을 열고 다음을 입력한 뒤 `hellp.py` 라는 이름으로 저장하세요.
 
-[source,python]
 ```
-print "hello world"
+print("hello world")
 ```
 
 이제 `File` -> `Save` 메뉴를 클릭하시고 `hello.py` 라고 입력해 봅시다.
 
 파일을 어디에 저장해야 할까요? 폴더의 경로를 알고 있다면 어디에든 저장해도 좋습니다.
-이 말이 무슨 뜻인지 잘 모르시겠다면, 다음과 같이 새 폴더를 만들고 앞으로 작성할 모든 파이썬 프로그램을
-이곳에 저장하도록 합시다.
+이 말이 무슨 뜻인지 잘 모르시겠다면, 다음과 같이 새 폴더를 만들고 앞으로 작성할 모든 파이썬 프로그램을 이곳에 저장하도록 합시다.
 
-- `/tmp/py` (Mac OS X 환경)
+- `/tmp/py` (MacOS 환경)
 - `/tmp/py` (GNU/Linux 환경)
-- `C:\\py` (윈도우 환경)
+- `C:\py` (윈도우 환경)
 
-폴더를 만드는 방법은 터미널에서 `mkdir` 명령을 이용하면 됩니다.
-예를 들어 Max OS X 혹은 GNU/Linux의 경우 `mkdir /tmp/py` 라고 입력하면 됩니다.
+폴더를 만드는 방법은 터미널에서 `mkdir` 명령을 이용하면 됩니다. 예를 들어 Max OS X 혹은 GNU/Linux의 경우 `mkdir /tmp/py` 라고 입력하면 됩니다.
 
 중요: 파일의 확장자명을 `.py`로 지정했는지 언제나 다시 한번 확인하세요. `foo.py`와 같은 형태가 되어야 합니다.
 
 파이썬 프로그램 실행시키기:
 
-###  터미널 창을 여세요 ([설치](./installation.md#installation) 챕터에서 터미널 창을 여는 법을 다루고 있습니다).
-###  cd (**C**hange **d**irectory의 약어) 명령으로 파일을 저장한 경로로 이동합니다.
-  예를 들어 Max OS X 혹은 GNU/Linux의 경우 `cd /tmp/py` 와 같이 입력하세요.
-###  `python hello.py`라 입력하여 프로그램을 실행합니다. 실행 결과는 아래와 같습니다.
+1. 터미널 창을 여세요 ([설치](./installation.md#installation) 챕터에서 터미널 창을 여는 법을 다루고 있습니다).
+1. cd (**C**hange **d**irectory의 약어) 명령으로 파일을 저장한 경로로 이동합니다. 예를 들어 MaxOS 혹은 GNU/Linux의 경우 `cd /tmp/py` 와 같이 입력하세요.
+1. `python hello.py`라 입력하여 프로그램을 실행합니다. 실행 결과는 아래와 같습니다.
 
 ```
 $ python hello.py
@@ -189,38 +173,24 @@ hello world
 
 ![Screenshot of running program in terminal](./img/terminal_screenshot.png)
 
-위와 같은 결과물을 얻으셨나요? 축하합니다! 여러분은 여러분의 첫 파이썬 프로그램을
-성공적으로 실행시킨 것입니다. 방금 여러분은 프로그래밍을 배울 때 접하는 가장 어려운
-부분을 지나온 것입니다. 그것은 바로 첫 프로그램을 성공적으로 실행시키는 것입니다!
+위와 같은 결과물을 얻으셨나요? 축하합니다! 여러분은 여러분의 첫 파이썬 프로그램을 성공적으로 실행시킨 것입니다. 방금 여러분은 프로그래밍을 배울 때 접하는 가장 어려운 부분을 지나온 것입니다. 그것은 바로 첫 프로그램을 성공적으로 실행시키는 것입니다!
 
 만약 결과물 대신 오류 메시지가 출력되는 경우에는, 다시한번 프로그램을 *정확하게* 적혀진
 그대로 입력한 뒤 프로그램을 다시 실행해 보세요. 파이썬은 대/소문자를 구분합니다.
-예를 들면 `print` 는 `Print`와 같지 않습니다. 전자의 `p`는 소문자이고, 후자의 `P`는
-대문자임에 유의하세요. 또한, 모든 줄의 첫번째 문자 앞에 공백이나 탭이 입력되어 있지는 않은지 확인하세요.
-곧 [왜 이것이 중요한지 다루게 될 것입니다](./indentation.md#indentation).   
+예를 들면 `print` 는 `Print`와 같지 않습니다. 전자의 `p`는 소문자이고, 후자의 `P`는 대문자임에 유의하세요. 또한, 모든 줄의 첫번째 문자 앞에 공백이나 탭이 입력되어 있지는 않은지 확인하세요. 곧 [왜 이것이 중요한지 다루게 될 것입니다](./indentation.md#indentation).   
 
 ### 동작 원리
-파이썬 프로그램은 _명령문_들로 구성됩니다. 여러분이 작성한 첫 프로그램에서는,
-단 한 가지의 명령만이 사용되었습니다. 여기서는 `print`라고 불리우는
-_명령_을 불러 "Hello World"라는 문자열을 출력하도록 한 것입니다.
+파이썬 프로그램은 _명령문_들로 구성됩니다. 여러분이 작성한 첫 프로그램에서는, 단 한 가지의 명령만이 사용되었습니다. 여기서는 `print`라고 불리우는 _명령_을 불러 "Hello World"라는 문자열을 출력하도록 한 것입니다.
 
 ## 도움 받기
 
-여러분이 파이썬이 제공하는 여러 함수나 명령들에 대한 정보를 얻고
-싶으실 경우, 파이썬에 내장된 `help` 명령을 사용할 수 있습니다.
-이 기능은 인터프리터 프롬프트를 이용할 때 특히 유용합니다.
-예를 들면, `help('len')`라고 입력해 보세요. 그러면 항목의 개수를 세는 데 사용되는
-`len` 함수에 대한 도움말이 화면에 표시됩니다.
+여러분이 파이썬이 제공하는 여러 함수나 명령들에 대한 정보를 얻고 싶으실 경우, 파이썬에 내장된 `help` 명령을 사용할 수 있습니다. 이 기능은 인터프리터 프롬프트를 이용할 때 특히 유용합니다. 예를 들면, `help('len')`라고 입력해 보세요. 그러면 항목의 개수를 세는 데 사용되는 `len` 함수에 대한 도움말이 화면에 표시됩니다.
 
 TIP: `q` 를 눌러 도움말을 종료할 수 있습니다.
 
-비슷한 방법으로, 파이썬 내에 있는 거의 모든 항목에 대한 정보를 얻을 수 있습니다.
-`help()`를 이용하여 `help` 라는 명령 자체에 대한 설명도 확인해 보세요!
+비슷한 방법으로, 파이썬 내에 있는 거의 모든 항목에 대한 정보를 얻을 수 있습니다. `help()`를 이용하여 `help` 라는 명령 자체에 대한 설명도 확인해 보세요!
 
-혹시 여러분이 `return`과 같은 연산자들에 대한 정보를 얻고 싶은 경우,
-다음과 같이 좌우에 따옴표를 붙여줄 필요가 있습니다. 즉, `help('return')`
-과 같이 해 주어 파이썬이 우리가 어떤 일을 하려고 하는 것인지 혼동하지 않게
-합니다.
+혹시 여러분이 `return`과 같은 연산자들에 대한 정보를 얻고 싶은 경우 다음과 같이 좌우에 따옴표를 붙여줄 필요가 있습니다. 즉, `help('return')`과 같이 해 주어 파이썬이 우리가 어떤 일을 하려고 하는 것인지 혼동하지 않게 합니다.
 
 ## 요약
 
