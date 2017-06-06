@@ -1,43 +1,44 @@
-# Basics
+# 기초
 
-Just printing `hello world` is not enough, is it? You want to do more than that - you want to take some input, manipulate it and get something out of it. We can achieve this in Python using constants and variables, and we'll learn some other concepts as well in this chapter.
+화면에 `Hello World`를 출력하는 것만으로는 부족하지요? 여러분은 아마 더 많은 것들을 해 보고 싶을 것입니다. 뭔가 정보를 입력받고, 처리한 뒤 결과물을 출력하는 프로그램을 만들고 싶으실 테지요. 파이썬에서는 상수들과 변수들을 이용하여 이러한 일을 할 수 있습니다. 이 장에서는 이외에도 몇 가지 기본 기능들에 대해서도 다뤄 볼 것입니다.
 
-## Comments
+## 주석
 
-_Comments_ are any text to the right of the `#` symbol and is mainly useful as notes for the reader of the program.
+주석은 `#` 문자 뒤에 따라오는 짧은 문장입니다. 주로 소스 코드를 읽는 사람들을 위해 주석을 남기는 용도로 빈번하게 사용됩니다.
 
-For example:
+
+예제:
 
 ```python
 print('hello world') # Note that print is a function
 ```
 
-or:
+또는
 
 ```python
 # Note that print is a function
 print('hello world')
 ```
 
-Use as many useful comments as you can in your program to:
+여러분이 프로그램을 작성할 때, 주석을 가능한 많이 사용하시기 바랍니다.
 
-- explain assumptions
-- explain important decisions
-- explain important details
-- explain problems you're trying to solve
-- explain problems you're trying to overcome in your program, etc.
+- 미리 가정하고 넘어간 것들에 대한 설명
+- 중요한 결정사항에 대한 설명
+- 중요한 세부사항에 대한 설명
+- 해결하고자 하는 문제에 대한 설명
+- 앞으로 극복하려고 하는 문제들에 대한 설명 등등.
 
-[*Code tells you how, comments should tell you why*](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
+[코드는 어떻게? 라는 물음에 답하지만, 주석은 왜? 라는 물음에 답해야 합니다(영문)](http://www.codinghorror.com/blog/2006/12/code-tells-you-how-comments-tell-you-why.html).
 
-This is useful for readers of your program so that they can easily understand what the program is doing. Remember, that person can be yourself after six months!
+주석은 여러분의 프로그램을 읽는 사람들에게 여러분이 작성한 프로그램이 무엇을 하는 프로그램인지 쉽게 파악할 수 있도록 도움을 주는 역할을 합니다. 프로그램을 작성하고 한 6개월쯤 뒤에는 여러분이 작성한 주석에 도움을 받는 사람이 여러분 자신이 될 수도 있다는 점을 꼭 기억하세요!
 
-## Literal Constants
+## 리터럴 상수
 
-An example of a literal constant is a number like `5`, `1.23`, or a string like `'This is a string'` or `"It's a string!"`.
+리터럴 상수는 `5`, `1.23`과 같은 숫자나, `'This is a string'` 혹은 `"It’s a string!"` 과 같은 문자열 등을 말합니다.
 
-It is called a literal because it is _literal_ - you use its value literally. The number `2` always represents itself and nothing else - it is a _constant_ because its value cannot be changed. Hence, all these are referred to as literal constants.
+이것들이 리터럴 상수라고 불리우는 이유는 이것들이 프로그램 내에 직접 문자 형태로(literally) 지정되는 값들이기 때문입니다. 이러한 값들은 한 번 지정되면 변하지 않습니다. 예를 들면 숫자 `2`는 언제나 자기 자신이 2라는 숫자임을 나타내며 어떤 다른 의미도 갖지 않습니다. 이들은 한번 지정되면 그 값을 변경할 수 없기 때문에 _상수_입니다. 그 중에서도 특별히 이러한 값들을 리터럴 상수라고 부릅니다.
 
-## Numbers
+## 숫자형
 
 Numbers are mainly of two types - integers and floats.
 
@@ -45,9 +46,13 @@ An example of an integer is `2` which is just a whole number.
 
 Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E-4`. The `E` notation indicates powers of 10. In this case, `52.3E-4` means `52.3 * 10^-4^`.
 
-> **Note for Experienced Programmers**
+숫자형에는 정수형(Integer)과 부동 소수점 숫자형(Float)의 두 가지 종류가 있습니다. 
+
+정수형 숫자의 예는 `2`입니다. 이것은 단순히 2라는 숫자를 의미하는 것입니다. 부동 소수점 숫자의 예는 `3.23`, `52.3E-4`와 같은 값입니다. `E` 표기법은 E 뒤의 값이 10의 지수임을 나타냅니다. 예를 들어 `52.3E-4`는 `52.3 * 10^-4^`라는 값을 의미합니다.
+
+> **숙련된 프로그래머들을 위한 주석**
 > 
-> There is no separate `long` type. The `int` type can be an integer of any size.
+> 파이썬에서는 `long`형이 따로 없습니다. 대신 `int`형에 어떤 크기의 정수든지 담을 수 있습니다.
 
 ## Strings
 
