@@ -54,25 +54,21 @@ Examples of floating point numbers (or _floats_ for short) are `3.23` and `52.3E
 > 
 > 파이썬에서는 `long`형이 따로 없습니다. 대신 `int`형에 어떤 크기의 정수든지 담을 수 있습니다.
 
-## Strings
+## 문자열
 
-A string is a _sequence_ of _characters_. Strings are basically just a bunch of words.
+문자열이란 _문자_의 _나열_을 뜻합니다. 문자열은 간단하게 말하자면 문자들의 집합입니다. 여러분은 아마 앞으로 작성하게 될 거의 모든 파이썬 프로그램에서 문자열을 사용하게 될 것입니다. 따라서 아래 항목들을 주의깊게 살펴보세요.
 
-You will be using strings in almost every Python program that you write, so pay attention to the following part.
+### 작은 따옴표
 
-### Single Quote
+여러분은 작은 따옴표를 이용하여 문자열을 지정할 수 있습니다. 예를 들어 `'Quote me on this'`와 같이 하면 됩니다. 모든 공백 문자, 즉 띄어쓰기나 탭 등은 입력한 그대로 유지됩니다.
 
-You can specify strings using single quotes such as `'Quote me on this'`.
+### 큰 따옴표
 
-All white space i.e. spaces and tabs, within the quotes, are preserved as-is.
+큰 따옴표로 둘러싸인 문자열은 작은 따옴표로 둘러싸인 문자열과 완전히 동일하게 취급됩니다. 예를 들면, `"What’s your name?"`과 같습니다.(큰 따옴표로 둘러싸인 문자열 안에 작은 따옴표가 포함되어도 됩니다).
 
-### Double Quotes
+### 따옴표 세 개 {#triple-quotes}
 
-Strings in double quotes work exactly the same way as strings in single quotes. An example is `"What's your name?"`.
-
-### Triple Quotes {#triple-quotes}
-
-You can specify multi-line strings using triple quotes - (`"""` or `'''`). You can use single quotes and double quotes freely within the triple quotes. An example is:
+여러 줄에 걸친 문자열은 세 개의 따옴표로 표현할 수 있습니다 - (`"""` 또는 `'''`). 세 개의 따옴표로 묶여진 문자열 안에서는 작은 따옴표든 큰 따옴표든 마음대로 사용할 수 있습니다. 예를 들면 다음과 같습니다.
 
 ```python
 '''This is a multi-line string. This is the first line.
@@ -82,27 +78,25 @@ He said "Bond, James Bond."
 '''
 ```
 
-### Strings Are Immutable
+### 문자열은 수정이 불가
 
-This means that once you have created a string, you cannot change it. Although this might seem like
-a bad thing, it really isn't. We will see why this is not a limitation in the various programs that
-we see later on.
+여러분이 문자열을 한번 만들면, 그 문자열의 내용은 더이상 변경할 수 없습니다. 이것은 어떤 면에서는 좀 불편할 수 있다고 느낄 수 있겠습니다만, 사실은 그렇지 않습니다. 책의 뒷부분에서 여러 프로그램 예시를 통해 왜 이것이 큰 제약이 아닌지 살펴볼 것입니다.
 
-> **Note for C/C++ Programmers**
+> **C/C++ 프로그래머들을 위한 주석**
 > 
-> There is no separate `char` data type in Python. There is no real need for it and I am sure you won't miss it.
+> 파이썬에서는 `char`형이 따로 구분되어 있지 않습니다. 파이썬에서는 이것이 딱히 필요가 없습니다. 곧 여러분도 char 형을 찾지 않게 될 것입니다.
 
 <!-- -->
 
-> **Note for Perl/PHP Programmers**
+> **Perl/PHP 프로그래머들을 위한 주석**
 > 
-> Remember that single-quoted strings and double-quoted strings are the same - they do not differ in any way.
+> 파이썬에서는 작은 따옴표와 큰 따옴표로 둘러싸인 문자열을 동일하게 취급합니다. 둘 사이에 어떤 차이도 없습니다.
 
-### The format method
+### 문자열 포맷팅
 
-Sometimes we may want to construct strings from other information. This is where the `format()` method is useful.
+문자열을 생성하려고 할 때, 종종 다른 정보들을 포함하여 생성하고 싶을 때가 있습니다. 이것을 문자열 포맷팅이라고 하며, 이를 위해 `format()`을 이용합니다.
 
-Save the following lines as a file `str_format.py`:
+다음을 str_format.py 라는 이름으로 저장하세요.
 
 ```python
 age = 20
@@ -112,7 +106,7 @@ print('{0} was {1} years old when he wrote this book'.format(name, age))
 print('Why is {0} playing with that python?'.format(name))
 ```
 
-Output:
+실행 결과:
 
 ```
 $ python str_format.py
@@ -120,21 +114,21 @@ Swaroop was 20 years old when he wrote this book
 Why is Swaroop playing with that python?
 ```
 
-**How It Works**
+**동작 원리**
 
-A string can use certain specifications and subsequently, the `format` method can be called to substitute those specifications with corresponding arguments to the `format` method.
+먼저 중괄호로 표현된 특별한 표시들이 포함된 문자열을 만들고, 그 후에 문자열의 `format` 메소드를 사용하여 이 표시들을 `format` 메소드에 주어진 인자들로 치환한 것입니다.
 
-Observe the first usage where we use `{0}` and this corresponds to the variable `name` which is the first argument to the format method. Similarly, the second specification is `{1}` corresponding to `age` which is the second argument to the format method. Note that Python starts counting from 0 which means that first position is at index 0, second position is at index 1, and so on.
+위 예시에서는 문자열 내에서 첫번째로 `{0}` 이 사용되었으며 이것은 format 메소드에 주어진 첫번째 인자, 즉 변수 `name`에 해당됩니다. 마찬가지로, 두번째 사용된 표시는 `{1}` 이며 이것은 format 메소드에 주어진 두번째 인자인 `age`에 해당됩니다. 파이썬은 숫자를 셀 때 항상 0 부터 세기 시작한다는 점에 유의하세요. 즉, 첫번째 인자의 인덱스는 0 이며, 두번째는 1 입니다.
 
-Notice that we could have achieved the same using string concatenation:
+또한 다음과 같이 문자열 더하기를 이용하여 동일한 결과를 얻을 수도 있습니다.
 
 ```python
 name + ' is ' + str(age) + ' years old'
 ```
 
-but that is much uglier and error-prone. Second, the conversion to string would be done automatically by the `format` method instead of the explicit conversion to strings needed in this case. Third, when using the `format` method, we can change the message without having to deal with the variables used and vice-versa.
+그러나 이것은 척 보기에도 깔끔하지 못하며, 작성 중 실수하기도 쉽습니다. 또 이 경우 각 변수를 일일이 명시적으로 문자열로 변환해주어야 하지만, `format` 메소드를 이용할 경우에는 알아서 자동으로 변환해 줍니다. 또 `format` 메소드를 이용할 경우 변수들을 신경쓰지 않고 문자열의 내용을 수정하기 쉽고, 문자열에 신경쓰지 않고도 변수의 위치나 순서 등을 변경하기가 더 쉽습니다.
 
-Also note that the numbers are optional, so you could have also written as:
+이 때 중괄호 내에 주어진 숫자는 생략할 수 있습니다. 다음 예제를 확인하세요.
 
 ```python
 age = 20
@@ -144,21 +138,20 @@ print('{} was {} years old when he wrote this book'.format(name, age))
 print('Why is {} playing with that python?'.format(name))
 ```
 
-which will give the same exact output as the previous program.
+위 프로그램 또한 동일한 결과를 출력합니다.
 
-What Python does in the `format` method is that it substitutes each argument value into the place of the specification. There can be more detailed specifications such as:
+파이썬의 `format`은 중괄호 표시의 위치에 주어진 인자들의 값을 치환해 넣습니다. 이때, 중괄호 표시에 다음과 같이 좀 더 상세히 세부사항을 지정할 수도 있습니다.
 
 ```python
-# decimal (.) precision of 3 for float '0.333'
+# 소수점 이하 셋째 자리까지 부동 소숫점 숫자 표기 (0.333)
 print('{0:.3f}'.format(1.0/3))
-# fill with underscores (_) with the text centered
-# (^) to 11 width '___hello___'
+# 밑줄(_)로 11칸을 채우고 가운데 정렬(^)하기 (___hello___)
 print('{0:_^11}'.format('hello'))
-# keyword-based 'Swaroop wrote A Byte of Python'
+# 사용자 지정 키워드를 이용해 (Swaroop wrote A Byte of Python) 표기
 print('{name} wrote {book}'.format(name='Swaroop', book='A Byte of Python'))
 ```
 
-Output:
+실행 결과:
 
 ```
 0.333
@@ -168,18 +161,19 @@ Swaroop wrote A Byte of Python
 
 Since we are discussing formatting, note that `print` always ends with an invisible "new line" character (`\n`) so that repeated calls to `print` will all print on a separate line each. To prevent this newline character from being printed, you can specify that it should `end` with a blank:
 
+지금까지 문자열 포맷팅에 대해 알아보았습니다. 여기서 `print` 명령은 언제나 주어진 문자열의 끝에 "줄바꿈" 문자 (`\n`) 을 덧붙인다는 것 또한 기억하세요. 따라서 `print` 명령을 호출할 때마다 인자로 주어진 내용들은 항상 그 다음 줄에 출력됩니다. 이것을 막기 위해서는 print 함수의 인자 `end`를 공백으로 지정하면 됩니다.
 ```python
 print('a', end='')
 print('b', end='')
 ```
 
-Output is:
+실행 결과:
 
 ```
 ab
 ```
 
-Or you can `end` with a space:
+또는 `end`를 한 칸 띄운 값으로 지정해도 됩니다.
 
 ```python
 print('a', end=' ')
@@ -187,7 +181,7 @@ print('b', end=' ')
 print('c')
 ```
 
-Output is:
+실행 결과:
 
 ```
 a b c
